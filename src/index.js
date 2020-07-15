@@ -1,5 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App.js";
+import { render } from "react-dom"
+import ReactDOM from "react-dom"
+import { Router, Link } from "@reach/router"
+import Menu from "./app.js";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+ReactDOM.render(<Menu />, document.getElementById("menu"));
