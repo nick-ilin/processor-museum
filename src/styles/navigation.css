@@ -1,0 +1,32 @@
+#navmenu ul {
+    list-style: none; 
+    margin: 0; 
+    padding-left: 0; 
+  }
+#navmenu, #navmenu li {
+    margin: 0;
+    padding: 0;
+}
+#navmenu {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: #03658e;
+ }
+#navmenu li{
+    display:inline-block;
+    text-align: center;
+}
+#navmenu a {
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    font-size:150%;
+    text-decoration: none;
+ }
+#navmenu a:hover {
+    background: #8AB8CC;
+}
+.activemenu {
+    background: #8AB8CC;
+}

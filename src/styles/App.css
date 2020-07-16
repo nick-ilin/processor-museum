@@ -1,35 +1,3 @@
 body {
     background-color: #add8e6;
 }
-ul {
-    list-style: none; 
-    margin: 0; 
-    padding-left: 0; 
-  }
-#menu, #menu li {
-    margin: 0;
-     padding: 0;
-}
-#menu {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    background: #03658e;
- }
-#menu li{
-    display:inline-block;
-    text-align: center;
-}
-#menu a {
-    display: block;
-    padding: 5px 15px;
-    color: #fff;
-    font-size:150%;
-    text-decoration: none;
- }
-#menu a:hover {
-    background: #8AB8CC;
-}
-.activemenu {
-    background: #8AB8CC;
-}

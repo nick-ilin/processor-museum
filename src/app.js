@@ -1,49 +1,24 @@
 import React, { Component } from "react";
-
+import Navigation from './components/navigation.js';
+import Processors from './pages/processors.js';
+import Videocards from './pages/videocards.js';
+import Mainboards from './pages/mainboards.js';
+import Memories from './pages/memories.js';
+import Devices from './pages/devices.js';
 import './styles/app.css';
 
-const menuItems = [
-    {name: "Процессоры"},
-    {name: "Видеокарты"},
-    {name: "Материнские платы"}, 
-    {name: "ОЗУ"},
-    {name: "Устройства"}
-    ];
-    
-class Menu extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleItemClick = this.handleItemClick.bind(this);
-        this.state = { selectedItem: null };
-    }
-    handleItemClick(selectedItem) {
-        this.setState({ selectedItem });
-    }
+class App extends React.Component {
     render() {
-        const { items } = this.props;
-        const { selectedItem } = this.state;
-        const { handleItemClick } = this;
-        <ul>
-            {menuItems.map((item, key) => <Link key={key} item={item} isActive={item === selectedItem} onClick={handleItemClick} />)}
-        </ul>
-    }
-}
-class Link extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
-    handleClick() {
-        const { item, onClick } = this.props;
-        onClick(item);
-    }
-    render() {
-        const { item, isActive } = this.props;
-        const { handleClick } = this;
-        return(
-             <li className={isActive ? 'activemenu' : '' } onClick={handleClick}>{item.name}</li>
+        return (
+            <Navigation>
+                <Processors path="processors" />
+                <Videocards path="videocards" />
+                <Mainboards path="mainboards" />
+                <Memories path="memories" />
+                <Devices path="devices" />
+            </Navigation>
         )
     }
 }
 
-export default Menu;
+export default App;
