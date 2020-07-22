@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 
-import Vendortree from '../components/vendortree';
-
-import '../styles/opinionated.css';
+import '../styles/tree.css';
 
 
 class Processors extends React.Component {
     render() {
         return (
-            <Vendortree />
+            <div>Контент для страницы с процессорами</div>
         )
     }
 }
