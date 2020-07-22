@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import { Router, Link, Match } from "@reach/router";
+import React from "react";
+import { Link } from "@reach/router";
+
 import '../styles/navigation.css';
 
 const NavLink = props => (

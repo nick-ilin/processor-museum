@@ -1,12 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import { Router } from "@reach/router";
+
 import Navigation from './components/navigation';
+
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';
 import Memories from './pages/memories';
 import Devices from './pages/devices';
+
 import './styles/app.css';
-import { Router } from "@reach/router";
 
 class App extends React.Component {
     render() {
