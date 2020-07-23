@@ -16,8 +16,8 @@ class App extends React.Component {
         return (
             <Router>
                 <Home path="/">
-                    <Processors path="processors"> 
-                        <ProcessorsHome path="/" /> 
+                    <Processors path="processors">
+                        <ProcessorsHome path="/" />
                     </Processors>
                     <Videocards path="videocards" />
                     <Mainboards path="mainboards" />
