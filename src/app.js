@@ -16,8 +16,8 @@ class App extends React.Component {
         return (
             <Router>
                 <Home path="/">
-                    <Processors path="processors"> // тут дерево вендоров
-                        <ProcessorsHome path="/" /> // тут контент если не выбран процессор
+                    <Processors path="processors"> 
+                        <ProcessorsHome path="/" /> 
                     </Processors>
                     <Videocards path="videocards" />
                     <Mainboards path="mainboards" />
