@@ -7,7 +7,7 @@ import Mainboards from './pages/mainboards';
 import Memories from './pages/memories';
 import Devices from './pages/devices';
 import Home from './pages/home'
-import ProcessorsHome from './pages/processorshome'
+import ProcessorsHome from './pages/processors-home'
 
 import './styles/app.css';
 
