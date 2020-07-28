@@ -1,24 +1,26 @@
 import React from "react";
 import TreeView from 'react-treeview';
+import _ from "lodash";
 
 import '../styles/react-treeview.css';
 
-const vendorArr = ['AMD', 'Intel', 'IBM', 'Cirix', 'Harris', 'TI'];
+import data from '../pages/processors/processors.json'
 
-const processorArr = [
+/*const processorArr = [
     ['286', '386', '486'],
     ['Pentium I', 'Pentium II', 'Pentium !!!'],
     ['486'],
     ['386'],
     ['286'],
     ['486']
-];
+];*/
+const vendors = _.uniq(_.map(data, 'vendor'));
 
 class VendorTree extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapsedBookkeeping: vendorArr.map(() => true)
+            collapsedBookkeeping: vendors.map(() => true)
         }
     }
         
@@ -26,7 +28,7 @@ class VendorTree extends React.Component {
     this.setState(prevState => {
         let [...collapsedBookkeeping] = prevState.collapsedBookkeeping;
             collapsedBookkeeping[i] = !collapsedBookkeeping[i];
-            this.setState({collapsedBookkeeping: collapsedBookkeeping});
+            this.setState({collapsedBookkeeping});
         })
     }
         
@@ -34,18 +36,19 @@ class VendorTree extends React.Component {
         const collapsedBookkeeping = this.state.collapsedBookkeeping;
         return (
             <div>
-                {vendorArr.map((node, i) => {
+                {vendors.map((vendor, i) => {
                 const label =
-                    <span className="vendorname" onClick={this.handleClick.bind(this, i)}>
-                        {node}
+                    <span className="vendorname" onClick = {this.handleClick.bind(this, i)}>
+                        {vendor}
                     </span>;
+                const processors = _.filter(data, {vendor: vendors[i]});
                 return (
                     <TreeView
-                        key={i}
-                        nodeLabel={label}
+                        key = {i}
+                        nodeLabel = {label}
                         collapsed = {collapsedBookkeeping[i]}
-                        onClick={this.handleClick.bind(this, i)}>
-                            {processorArr[i].map(entry => <div className="procname" key={entry}><a>{entry}</a></div>)}
+                        onClick = {this.handleClick.bind(this, i)}>
+                        {processors.map(processor => <div className="procname" key={processor.id}><a>{processor.name}</a></div>)}
                     </TreeView>
                 );
                 })}
