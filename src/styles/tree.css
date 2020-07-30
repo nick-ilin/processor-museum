@@ -34,7 +34,7 @@
   transform: rotate(-90deg);
 }
 
-.vendorname {
+.vendorName {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -43,12 +43,12 @@
   border-radius: 3px;
   font-weight: bold;
 }
-.vendorname:hover {
+.vendorName:hover {
   background-color: rgb(220, 245, 243);
   cursor: pointer;
   font-weight: bold;
 }
-.procname, .vendorname {
+.deviceName, .vendorName {
   padding: 2px 10px 2px 5px;
   font: 14px Helvetica, Arial, sans-serif;
   -webkit-user-select: none;
@@ -56,16 +56,16 @@
   -ms-user-select: none;
   user-select: none;
 }
-.procname a {
+.deviceName a {
   text-decoration: none;
+  color: black;
+}
+.deviceName a:hover {
+  font-weight: bold;
+}
+.procName a:visited {
   color: black;
 }
 .active {
   background: #ffffff;
-}
-.procname a:hover {
-  font-weight: bold;
-}
-.procname a:visited {
-  color: black;
 }

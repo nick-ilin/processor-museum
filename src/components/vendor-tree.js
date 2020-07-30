@@ -2,9 +2,9 @@ import React from "react";
 import TreeView from 'react-treeview';
 import _ from "lodash";
 
-import data from '../pages/processors/processors.json'
+import Data from '../pages/processors/processors.json'
 
-const vendors = _(data).map('vendor').uniq().value();
+const vendors = _(Data).map('vendor').uniq().value();
 
 class VendorTree extends React.Component {
     constructor(props) {
@@ -21,28 +21,21 @@ class VendorTree extends React.Component {
             this.setState({collapsedBookKeeping});
         })
     }
+
+    renderVendorTree(vendor, i) {
+        const collapsedBookKeeping = this.state.collapsedBookKeeping;
+        const label = <span className="vendorName" onClick={this.handleClick.bind(this, i)}>{vendor}</span>;
+        const devices = _.filter(Data, {vendor: vendors[i]});
+        return (
+            <TreeView key={i} nodeLabel={label} collapsed={collapsedBookKeeping[i]} onClick={this.handleClick.bind(this, i)}>
+                {devices.map(device => <div className="deviceName" key={device.id}><a>{device.name}</a></div>)}
+            </TreeView>
+        );
+    }
         
     render() {
-        const collapsedBookKeeping = this.state.collapsedBookKeeping;
         return (
-            <div>
-                {vendors.map((vendor, i) => {
-                    const label =
-                        <span className="vendorname" onClick={this.handleClick.bind(this, i)}>
-                            {vendor}
-                        </span>;
-                    const processors = _.filter(data, {vendor: vendors[i]});
-                    return (
-                        <TreeView
-                            key={i}
-                            nodeLabel={label}
-                            collapsed={collapsedBookKeeping[i]}
-                            onClick={this.handleClick.bind(this, i)}>
-                            {processors.map(processor => <div className="procname" key={processor.id}><a>{processor.name}</a></div>)}
-                        </TreeView>
-                    );
-                })}
-            </div>
+            <div>{vendors.map((vendor, i) => this.renderVendorTree(vendor, i))}</div>
         );
     }
 };
