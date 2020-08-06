@@ -2,6 +2,8 @@ import React from "react";
 import TreeView from 'react-treeview';
 import _ from "lodash";
 
+import '../styles/tree.css';
+
 let vendors;
 
 class VendorTree extends React.Component {
@@ -22,11 +24,11 @@ class VendorTree extends React.Component {
     }
 
     renderVendorTree(vendor, i) {
-        const collapsedBookKeeping = this.state.collapsedBookKeeping;
+        const {collapsedBookKeeping} = this.state
         const label = <span className="vendorName" onClick={this.handleClick.bind(this, i)}>{vendor}</span>;
         const devices = this.props.treeData[vendor].map((item) => item)
         return (
-            <TreeView key={i} nodeLabel={label} collapsed={collapsedBookKeeping[i]} onClick={this.handleClick.bind(this, i)}>
+            <TreeView key={i} className='vendorTree' nodeLabel={label} collapsed={collapsedBookKeeping[i]} onClick={this.handleClick.bind(this, i)}>
                 {devices.map(device => <div className="deviceName" key={device.id}><a>{device.name}</a></div>)}
             </TreeView>
         );

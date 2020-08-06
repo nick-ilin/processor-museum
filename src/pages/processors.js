@@ -5,15 +5,11 @@ import VendorTree from '../components/vendor-tree';
 
 import Data from '../pages/processors/processors.json';
 
-import '../styles/tree.css';
-
-const processors = _.groupBy(Data, 'vendor');
-
 class Processors extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            treeData: processors
+            treeData: _.groupBy(Data, 'vendor')
         }
     }
     render() {
