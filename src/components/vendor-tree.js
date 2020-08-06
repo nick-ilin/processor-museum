@@ -28,7 +28,7 @@ class VendorTree extends React.Component {
         const label = <span className="vendorName" onClick={this.handleClick.bind(this, i)}>{vendor}</span>;
         const devices = this.props.treeData[vendor].map((item) => item)
         return (
-            <TreeView key={i} className='vendorTree' nodeLabel={label} collapsed={collapsedBookKeeping[i]} onClick={this.handleClick.bind(this, i)}>
+            <TreeView key={i} nodeLabel={label} collapsed={collapsedBookKeeping[i]} onClick={this.handleClick.bind(this, i)}>
                 {devices.map(device => <div className="deviceName" key={device.id}><a>{device.name}</a></div>)}
             </TreeView>
         );
@@ -36,7 +36,7 @@ class VendorTree extends React.Component {
 
     render() {
         return (
-            <div>{vendors.map((vendor, i) => this.renderVendorTree(vendor, i))}</div>
+            <div className='vendorTree'>{vendors.map((vendor, i) => this.renderVendorTree(vendor, i))}</div>
         );
     }
 };

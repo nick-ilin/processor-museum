@@ -1,40 +1,40 @@
 /* the tree node's style */
-.tree-view {
+.vendorTree .tree-view {
   overflow-y: hidden;
 }
 
-.tree-view_item {
+.vendorTree .tree-view_item {
   /* immediate child of .tree-view, for styling convenience */
 }
 
 /* style for the children nodes container */
-.tree-view_children {
+.vendorTree .tree-view_children {
   margin-left: 30px;
 }
 
-.tree-view_children-collapsed {
+.vendorTree .tree-view_children-collapsed {
   height: 0px;
 }
 
-.tree-view_arrow {
+.vendorTree .tree-view_arrow {
   cursor: pointer;
   margin-right: 6px;
   display: inline-block;
 }
 
-.tree-view_arrow:after {
+.vendorTree .tree-view_arrow:after {
   content: '▾';
 }
 
 /* rotate the triangle to close it */
-.tree-view_arrow-collapsed {
+.vendorTree .tree-view_arrow-collapsed {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 
-.vendorName {
+.vendorTree .vendorName {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -43,12 +43,12 @@
   border-radius: 3px;
   font-weight: bold;
 }
-.vendorName:hover {
+.vendorTree .vendorName:hover {
   background-color: rgb(220, 245, 243);
   cursor: pointer;
   font-weight: bold;
 }
-.deviceName, .vendorName {
+.vendorTree .deviceName, .vendorTree .vendorName {
   padding: 2px 10px 2px 5px;
   font: 14px Helvetica, Arial, sans-serif;
   -webkit-user-select: none;
@@ -56,16 +56,16 @@
   -ms-user-select: none;
   user-select: none;
 }
-.deviceName a {
+.vendorTree .deviceName a {
   text-decoration: none;
   color: black;
 }
-.deviceName a:hover {
+.vendorTree .deviceName a:hover {
   font-weight: bold;
 }
-.procName a:visited {
+.vendorTree .procName a:visited {
   color: black;
 }
-.active {
+.vendorTree .active {
   background: #ffffff;
 }
