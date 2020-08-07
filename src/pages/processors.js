@@ -1,7 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
+import _ from "lodash";
 
-export default props => (
-    <div>
-        {props.children}
-    </div>
-);
+import VendorTree from '../components/vendor-tree';
+
+import Data from '../pages/processors/processors.json';
+
+class Processors extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            treeData: _.groupBy(Data, 'vendor')
+        }
+    }
+    render() {
+        return (
+            <div>
+                <VendorTree treeData={this.state.treeData}/>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+
+export default Processors;
