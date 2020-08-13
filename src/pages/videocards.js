@@ -1,11 +1,5 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class Videocards extends React.Component {
-    render() {
-        return (
-            <div>Контент для страницы с видеокартами</div>
-        )
-    }
-}
+const Videocards = () => (<div>Контент для страницы с видеокартами</div>);
 
 export default Videocards;

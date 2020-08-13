@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
 
 import Navigation from '../components/navigation';
 
-export default props => (
+const Home = (props) => {
+  const { children } = props;
+  return (
     <div>
-        <Navigation />
-        {props.children}
+      <Navigation />
+      {children}
     </div>
-);
+  );
+};
+
+export default Home;

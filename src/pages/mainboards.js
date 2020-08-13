@@ -1,11 +1,5 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class Mainboards extends React.Component {
-    render() {
-        return (
-            <div>Контент для страницы с материнскими платами</div>
-        )
-    }
-}
+const Mainboards = () => (<div>Контент для страницы с материнскими платами</div>);
 
 export default Mainboards;
