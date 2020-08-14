@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-export default props => (
-    <div>
-        Контент если не выбран процессор
-    </div>
-  )
+const ProcessorsHome = () => (<div>Контент если не выбран процессор</div>);
+
+export default ProcessorsHome;
