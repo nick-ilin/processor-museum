@@ -35,7 +35,7 @@ class VendorTree extends React.Component {
         key={i}
         nodeLabel={label}
         collapsed={collapsedBookKeeping[i]}
-        onClick={this.handleClick}
+        onClick={this.handleClick.bind(this, i)}
       >
         {devices.map((device) => (
           <div className="deviceName" key={device.id}>{device.name}</div>
