@@ -1,7 +1,7 @@
 import React from 'react';
 import TreeView from 'react-treeview';
 
-import '../styles/tree.css';
+import '../styles/tree.scss';
 
 let vendors;
 

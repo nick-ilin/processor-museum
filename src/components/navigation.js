@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 
-import '../styles/navigation.css';
+import '../styles/navigation.scss';
 
 const NavLink = (props) => (
   <li>

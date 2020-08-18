@@ -9,7 +9,7 @@ import Devices from './pages/devices';
 import Home from './pages/home';
 import ProcessorsHome from './pages/processors-home';
 
-import './styles/app.css';
+import './styles/app.scss';
 
 const App = () => (
   <Router>
