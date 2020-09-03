@@ -15,7 +15,7 @@ const App = () => (
   <Router>
     <Home path="/">
       <Processors path="processors">
-        <ProcessorsHome path="/" />
+        <ProcessorsHome path="processors/:id" />
       </Processors>
       <Videocards path="videocards" />
       <Mainboards path="mainboards" />

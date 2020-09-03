@@ -1,5 +1,5 @@
 [{
-  "id": "amd-286",
+  "id": "amd_286-12",
   "vendor": "AMD",
   "name": "Am286",
   "launchDate": "1980",
@@ -12,7 +12,7 @@
   "imageUrl": "src/assets/processors/amd/amd_286-12_top.jpg"
 },
 {
-  "id": "amd-am386",
+  "id": "amd_am386dx-40",
   "vendor": "AMD",
   "name": "Am386",
   "launchDate": "1985",
@@ -25,7 +25,7 @@
   "imageUrl": "src/assets/processors/amd/amd_am386dx-40_top.jpg"
 },
 {
-  "id": "amd-am486dx4",
+  "id": "amd_am486dx4-100",
   "vendor": "AMD",
   "name": "Am486DX4",
   "launchDate": "1988",
@@ -38,7 +38,7 @@
   "imageUrl": "src/assets/processors/amd/amd_am486dx4-100_top.jpg"
 },
 {
-  "id": "intel-286",
+  "id": "intel_286-12",
   "vendor": "Intel",
   "name": "286",
   "launchDate": "1980",
@@ -51,7 +51,7 @@
   "imageUrl": "src/assets/processors/intel/intel_286-12_top.jpg"
 },
 {
-  "id": "intel-386",
+  "id": "intel_386-25",
   "vendor": "Intel",
   "name": "386",
   "launchDate": "1985",
@@ -64,7 +64,7 @@
   "imageUrl": "src/assets/processors/intel/intel_386-25_top.jpg"
 },
 {
-  "id": "intel-486",
+  "id": "intel_486dx2",
   "vendor": "Intel",
   "name": "486",
   "launchDate": "1986",

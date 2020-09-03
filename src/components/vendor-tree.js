@@ -1,5 +1,6 @@
 import React from 'react';
 import TreeView from 'react-treeview';
+import { Link } from '@reach/router';
 
 import '../styles/tree.scss';
 
@@ -38,7 +39,9 @@ class VendorTree extends React.Component {
         onClick={this.handleClick.bind(this, i)}
       >
         {devices.map((device) => (
-          <div className="deviceName" key={device.id}>{device.name}</div>
+          <li key={device.id}>
+            <Link to={device.id} key={device.id}>{device.name}</Link>
+          </li>
         ))}
       </TreeView>
     );
