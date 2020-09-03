@@ -1,9 +1,5 @@
 import React from 'react';
 
-const ProcessorsHome = (props) => (
-  <div className="cpuImages">
-    <img className="cpuImage" src={`src/assets/processors/amd/${props.id}_top.jpg`} alt={props.id} />
-    <img className="cpuImage" src={`src/assets/processors/amd/${props.id}_bottom.jpg`} alt={props.id} />
-  </div>
-);
+const ProcessorsHome = () => (<div className="cpuImages">Контент если не выбран процессор</div>);
+
 export default ProcessorsHome;
