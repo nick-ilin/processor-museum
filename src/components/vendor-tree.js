@@ -40,7 +40,7 @@ class VendorTree extends React.Component {
       >
         {devices.map((device) => (
           <li key={device.id}>
-            <Link to={device.id} key={device.id}>{device.name}</Link>
+            <Link to={device.id}>{device.name}</Link>
           </li>
         ))}
       </TreeView>
