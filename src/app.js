@@ -2,11 +2,11 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 import ProcessorsHome from './pages/processors-home';
-import DeviceInfo from './components/processor-info';
+import ProcessorInfo from './components/processor-info';
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';
-import Memories from './pages/memories';
+import Rams from './pages/rams';
 import Devices from './pages/devices';
 import Home from './pages/home';
 
@@ -17,11 +17,11 @@ const App = () => (
     <Home path="/">
       <Processors path="processors">
         <ProcessorsHome path="/" />
-        <DeviceInfo path="/:id" />
+        <ProcessorInfo path="/:id" />
       </Processors>
       <Videocards path="videocards" />
       <Mainboards path="mainboards" />
-      <Memories path="memories" />
+      <Rams path="memories" />
       <Devices path="devices" />
     </Home>
   </Router>
