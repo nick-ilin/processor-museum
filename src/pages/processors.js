@@ -16,6 +16,7 @@ class Processors extends React.Component {
   render() {
     const { treeData } = this.state;
     const { children } = this.props;
+
     return (
       <div>
         <VendorTree treeData={treeData} />

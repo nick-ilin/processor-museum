@@ -2,7 +2,7 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 import ProcessorsHome from './pages/processors-home';
-import DeviceInfo from './components/device-info';
+import DeviceInfo from './components/processor-info';
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';

@@ -9,7 +9,7 @@
   "cycle": 1.5,
   "family": "12-20MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/amd/amd_286-12_top.jpg"
+  "imageUrl": "../src/assets/processors/amd/amd_286-12_top.jpg"
 },
 {
   "id": "amd_am386dx-40",
@@ -22,7 +22,7 @@
   "cycle": 0.8,
   "family": "20-66MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/amd/amd_am386dx-40_top.jpg"
+  "imageUrl": "../src/assets/processors/amd/amd_am386dx-40_top.jpg"
 },
 {
   "id": "amd_am486dx4-100",
@@ -35,7 +35,7 @@
   "cycle": 0.5,
   "family": "25-100MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/amd/amd_am486dx4-100_top.jpg"
+  "imageUrl": "../src/assets/processors/amd/amd_am486dx4-100_top.jpg"
 },
 {
   "id": "intel_286-12",
@@ -48,7 +48,7 @@
   "cycle": 1.5,
   "family": "12-20MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/intel/intel_286-12_top.jpg"
+  "imageUrl": "../src/assets/processors/intel/intel_286-12_top.jpg"
 },
 {
   "id": "intel_386-25",
@@ -61,7 +61,7 @@
   "cycle": 0.8,
   "family": "20-66MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/intel/intel_386-25_top.jpg"
+  "imageUrl": "../src/assets/processors/intel/intel_386-25_top.jpg"
 },
 {
   "id": "intel_486dx2",
@@ -74,6 +74,6 @@
   "cycle": 0.5,
   "family": "25-100MHz",
   "numberOfCores": 1,
-  "imageUrl": "src/assets/processors/intel/intel_486dx2_top.jpg"
+  "imageUrl": "../src/assets/processors/intel/intel_486dx2_top.jpg"
 }
 ]
