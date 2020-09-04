@@ -1,12 +1,12 @@
 import React from 'react';
 import TreeView from 'react-treeview';
 import { Link } from '@reach/router';
-import { getProcessor } from '../store/processors-store';
+import { getAllProcessors } from '../store/processors-store';
 
 import '../styles/tree.scss';
 
 let vendors;
-const treeData = getProcessor();
+const treeData = getAllProcessors();
 
 class VendorTree extends React.Component {
   constructor(props) {
