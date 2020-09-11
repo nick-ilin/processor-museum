@@ -1,5 +1,6 @@
 [{
   "id": "amd_286-12",
+  "imageUrl": "../src/assets/processors/amd/amd_286-12_top.jpg",
   "vendor": "AMD",
   "name": "Am286",
   "launchDate": "1980",
@@ -7,12 +8,11 @@
   "socket": "socket 1",
   "transistors": 0.1,
   "cycle": 1.5,
-  "family": "12-20MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/amd/amd_286-12_top.jpg"
+  "family": "12-20MHz"
 },
 {
   "id": "amd_am386dx-40",
+  "imageUrl": "../src/assets/processors/amd/amd_am386dx-40_top.jpg",
   "vendor": "AMD",
   "name": "Am386",
   "launchDate": "1985",
@@ -20,12 +20,11 @@
   "socket": "socket 1",
   "transistors": 0.2,
   "cycle": 0.8,
-  "family": "20-66MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/amd/amd_am386dx-40_top.jpg"
+  "family": "20-66MHz"
 },
 {
   "id": "amd_am486dx4-100",
+  "imageUrl": "../src/assets/processors/amd/amd_am486dx4-100_top.jpg",
   "vendor": "AMD",
   "name": "Am486DX4",
   "launchDate": "1988",
@@ -33,12 +32,11 @@
   "socket": "socket 3",
   "transistors": 1.2,
   "cycle": 0.5,
-  "family": "25-100MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/amd/amd_am486dx4-100_top.jpg"
+  "family": "25-100MHz"
 },
 {
   "id": "intel_286-12",
+  "imageUrl": "../src/assets/processors/intel/intel_286-12_top.jpg",
   "vendor": "Intel",
   "name": "286",
   "launchDate": "1980",
@@ -46,12 +44,11 @@
   "socket": "socket 1",
   "transistors": 0.2,
   "cycle": 1.5,
-  "family": "12-20MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/intel/intel_286-12_top.jpg"
+  "family": "12-20MHz"
 },
 {
   "id": "intel_386-25",
+  "imageUrl": "../src/assets/processors/intel/intel_386-25_top.jpg",
   "vendor": "Intel",
   "name": "386",
   "launchDate": "1985",
@@ -59,12 +56,11 @@
   "socket": "socket 1",
   "transistors": 0.8,
   "cycle": 0.8,
-  "family": "20-66MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/intel/intel_386-25_top.jpg"
+  "family": "20-66MHz"
 },
 {
   "id": "intel_486dx2",
+  "imageUrl": "../src/assets/processors/intel/intel_486dx2_top.jpg",
   "vendor": "Intel",
   "name": "486",
   "launchDate": "1986",
@@ -72,8 +68,6 @@
   "socket": "socket 3",
   "transistors": 1.2,
   "cycle": 0.5,
-  "family": "25-100MHz",
-  "numberOfCores": 1,
-  "imageUrl": "../src/assets/processors/intel/intel_486dx2_top.jpg"
+  "family": "25-100MHz"
 }
 ]

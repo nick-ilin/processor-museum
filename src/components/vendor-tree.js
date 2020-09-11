@@ -1,17 +1,18 @@
 import React from 'react';
 import TreeView from 'react-treeview';
 import { Link } from '@reach/router';
-import { getAllProcessors } from '../store/processors-store';
+import _ from 'lodash';
+import { getProcessors } from '../store/processors-store';
 
 import '../styles/tree.scss';
 
 let vendors;
-const treeData = getAllProcessors();
+const treeData = getProcessors();
 
 class VendorTree extends React.Component {
   constructor(props) {
     super(props);
-    vendors = Object.keys(treeData).map((key) => key);
+    vendors = _.uniqBy(treeData, 'vendor').map((item) => item.vendor);
     this.state = {
       collapsedBookKeeping: vendors.map(() => true),
     };
@@ -32,7 +33,7 @@ class VendorTree extends React.Component {
         {vendor}
       </span>
     );
-    const devices = treeData[vendor].map((item) => item);
+    const devices = _.filter(treeData, (item) => item.vendor === vendor).map((item) => item);
     return (
       <TreeView
         key={i}
