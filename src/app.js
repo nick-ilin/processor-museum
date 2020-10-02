@@ -6,7 +6,7 @@ import ProcessorInfo from './components/processor-info';
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';
-import Rams from './pages/rams';
+import Memories from './pages/memories';
 import Devices from './pages/devices';
 import Home from './pages/home';
 
@@ -21,7 +21,7 @@ const App = () => (
       </Processors>
       <Videocards path="videocards" />
       <Mainboards path="mainboards" />
-      <Rams path="memories" />
+      <Memories path="memories" />
       <Devices path="devices" />
     </Home>
   </Router>
