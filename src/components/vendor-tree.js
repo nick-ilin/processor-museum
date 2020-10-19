@@ -6,11 +6,13 @@ import _ from 'lodash';
 import '../styles/tree.scss';
 
 let vendors;
+let devices;
 
 class VendorTree extends React.Component {
   constructor(props) {
     super(props);
-    vendors = _.uniqBy(props.treeData, 'vendor').map((item) => item.vendor);
+    vendors = _(props.treeData).map('vendor').uniq().value();
+    devices = _.groupBy(props.treeData, 'vendor');
     this.state = {
       collapsedBookKeeping: vendors.map(() => true),
     };
@@ -31,7 +33,6 @@ class VendorTree extends React.Component {
         {vendor}
       </span>
     );
-    const devices = _.filter(this.props.treeData, (item) => item.vendor === vendor).map((item) => item);
     return (
       <TreeView
         key={i}
@@ -39,7 +40,7 @@ class VendorTree extends React.Component {
         collapsed={collapsedBookKeeping[i]}
         onClick={this.handleClick.bind(this, i)}
       >
-        {devices.map((device) => (
+        {devices[vendor].map((device) => (
           <li key={device.id}>
             <Link to={device.id}>{device.name}</Link>
           </li>
