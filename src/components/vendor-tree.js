@@ -1,14 +1,18 @@
 import React from 'react';
 import TreeView from 'react-treeview';
+import { Link } from '@reach/router';
+import _ from 'lodash';
 
 import '../styles/tree.scss';
 
 let vendors;
+let devices;
 
 class VendorTree extends React.Component {
   constructor(props) {
     super(props);
-    vendors = Object.keys(this.props.treeData).map((key) => key);
+    vendors = _(props.treeData).map('vendor').uniq().value();
+    devices = _.groupBy(props.treeData, 'vendor');
     this.state = {
       collapsedBookKeeping: vendors.map(() => true),
     };
@@ -29,7 +33,6 @@ class VendorTree extends React.Component {
         {vendor}
       </span>
     );
-    const devices = this.props.treeData[vendor].map((item) => item);
     return (
       <TreeView
         key={i}
@@ -37,8 +40,10 @@ class VendorTree extends React.Component {
         collapsed={collapsedBookKeeping[i]}
         onClick={this.handleClick.bind(this, i)}
       >
-        {devices.map((device) => (
-          <div className="deviceName" key={device.id}>{device.name}</div>
+        {devices[vendor].map((device) => (
+          <li key={device.id}>
+            <Link to={device.id}>{device.name}</Link>
+          </li>
         ))}
       </TreeView>
     );
