@@ -3,6 +3,8 @@ import { Router } from '@reach/router';
 
 import ProcessorsHome from './pages/processors-home';
 import ProcessorInfo from './components/processor-info';
+import MainboardsHome from './pages/mainboards-home';
+import MainboardInfo from './components/mainboard-info';
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';
@@ -20,7 +22,10 @@ const App = () => (
         <ProcessorInfo path="/:id" />
       </Processors>
       <Videocards path="videocards" />
-      <Mainboards path="mainboards" />
+      <Mainboards path="mainboards">
+        <MainboardsHome path="/" />
+        <MainboardInfo path="/:id" />
+      </Mainboards>
       <Memories path="memories" />
       <Devices path="devices" />
     </Home>

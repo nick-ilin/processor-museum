@@ -1,0 +1,61 @@
+[{
+  "id": "zida-tomato-board-4dps",
+  "imageUrl": "../src/assets/mainboards/zida-tomato-board-4dps.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/zida-tomato-board-4dps.jpg",
+  "vendor": "Zida",
+  "name": "Tomato board 4DPS",
+  "revision": "2.11",
+  "launchDate": "1980",
+  "socket": "socket 3"
+},
+{
+  "id": "acorp-5tx52",
+  "imageUrl": "../src/assets/mainboards/acorp-5tx52.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/acorp-5tx52.jpg",
+  "vendor": "Acorp",
+  "name": "5TX52",
+  "revision": "1.4",
+  "launchDate": "1988",
+  "socket": "socket 7"
+},
+{
+  "id": "asus-p2bf",
+  "imageUrl": "../src/assets/mainboards/asus-p2bf.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/asus-p2bf.jpg",
+  "vendor": "ASUS",
+  "name": "P2B-F",
+  "revision": "1.00",
+  "launchDate": "1995",
+  "socket": "slot 1"
+},
+{
+  "id": "acorp-6via85p",
+  "imageUrl": "../src/assets/mainboards/acorp-6via85p.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/acorp-6via85p.jpg",
+  "vendor": "Acorp",
+  "name": "6VIA85P",
+  "revision": "1.9",
+  "launchDate": "1999",
+  "socket": "socket 370"
+},
+{
+  "id": "asus-p4sp-mx",
+  "imageUrl": "../src/assets/mainboards/asus-p4sp-mx.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/asus-p4sp-mx.jpg",
+  "vendor": "ASUS",
+  "name": "P4SP-MX",
+  "revision": "1.00",
+  "launchDate": "2000",
+  "socket": "socket 478"
+},
+{
+  "id": "elitegroup-k7s5a",
+  "imageUrl": "../src/assets/mainboards/elitegroup-k7s5a.jpg",
+  "imageUrlBig": "../src/assets/mainboards/big/elitegroup-k7s5a.jpg",
+  "vendor": "Elitegroup",
+  "name": "K7S5A",
+  "revision": "3.1",
+  "launchDate": "2002",
+  "socket": "socket 462"
+}
+]
