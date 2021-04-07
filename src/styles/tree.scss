@@ -7,6 +7,7 @@
 
   .tree-view_children {
     margin-left: 30px;
+    margin-right: 20px;
   }
 
   .tree-view_children-collapsed {
@@ -64,5 +65,8 @@
   }
   .active {
     background: #ffffff;
+  }
+  .tree-view_item {
+    margin-right: 20px;
   }
 }
