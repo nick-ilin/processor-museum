@@ -10,9 +10,6 @@ const VideocardInfo = (props) => {
       <a href={info.imageUrlBigTop} target="_blank" rel="noreferrer">
         <img className="image" src={info.imageUrlTop} alt={info.name} />
       </a>
-      <a href={info.imageUrlBigBottom} target="_blank" rel="noreferrer">
-        <img className="image" src={info.imageUrlBottom} alt={info.name} />
-      </a>
       <div className="description">
         <ul>
           <li>{`Производитель: ${info.vendor}`}</li>
