@@ -1,5 +1,16 @@
 import React from 'react';
+import VendorTree from '../components/vendor-tree';
+import { getVideocards } from '../store/videocards-store';
 
-const Videocards = () => (<div>Контент для страницы с видеокартами</div>);
+import '../styles/navigation.scss';
+
+const treeData = getVideocards();
+
+const Videocards = (props) => (
+  <div className="main">
+    <VendorTree treeData={treeData} />
+    {props.children}
+  </div>
+);
 
 export default Videocards;
