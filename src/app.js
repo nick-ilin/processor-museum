@@ -5,6 +5,8 @@ import ProcessorsHome from './pages/processors-home';
 import ProcessorInfo from './components/processor-info';
 import MainboardsHome from './pages/mainboards-home';
 import MainboardInfo from './components/mainboard-info';
+import VideocardsHome from './pages/videocards-home';
+import VideocardsInfo from './components/videocard-info';
 import Processors from './pages/processors';
 import Videocards from './pages/videocards';
 import Mainboards from './pages/mainboards';
@@ -21,7 +23,10 @@ const App = () => (
         <ProcessorsHome path="/" />
         <ProcessorInfo path="/:id" />
       </Processors>
-      <Videocards path="videocards" />
+      <Videocards path="videocards">
+        <VideocardsHome path="/" />
+        <VideocardsInfo path="/:id" />
+      </Videocards>
       <Mainboards path="mainboards">
         <MainboardsHome path="/" />
         <MainboardInfo path="/:id" />

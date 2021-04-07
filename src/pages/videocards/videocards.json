@@ -1,0 +1,49 @@
+[{
+  "id": "asus-v9280",
+  "imageUrlTop": "../src/assets/videocards/asus-v9280_top.jpg",
+  "imageUrlBottom": "../src/assets/videocards/asus-v9280_bottom.jpg",
+  "imageUrlBigTop": "../src/assets/videocards/big/asus-v9280_top.jpg",
+  "imageUrlBigBottom": "../src/assets/videocards/big/asus-v9280_bottom.jpg",
+  "vendor": "ASUS",
+  "name": "V9280/128M",
+  "launchDate": "2002",
+  "slot": "AGP",
+  "gpu": "geforce 4"
+},
+{
+  "id": "asus-v7100",
+  "imageUrlTop": "../src/assets/videocards/asus-v7100_top.jpg",
+  "imageUrlBottom": "../src/assets/videocards/asus-v7100_bottom.jpg",
+  "imageUrlBigTop": "../src/assets/videocards/big/asus-v7100_top.jpg",
+  "imageUrlBigBottom": "../src/assets/videocards/big/asus-v7100_bottom.jpg",
+  "vendor": "ASUS",
+  "name": "V7100M-LP/32M(T)",
+  "launchDate": "2000",
+  "slot": "AGP",
+  "gpu": "geforce 2"
+},
+{
+  "id": "3dfx-voodoo-velocity",
+  "imageUrlTop": "../src/assets/videocards/3dfx-voodoo-velocity_top.jpg",
+  "imageUrlBottom": "../src/assets/videocards/3dfx-voodoo-velocity_bottom.jpg",
+  "imageUrlBigTop": "../src/assets/videocards/big/3dfx-voodoo-velocity_top.jpg",
+  "imageUrlBigBottom": "../src/assets/videocards/big/3dfx-voodoo-velocity_bottom.jpg",
+  "vendor": "3dfx",
+  "name": "Voodoo velocity",
+  "launchDate": "1988",
+  "slot": "AGP",
+  "gpu": "voodoo 3"
+},
+{
+  "id": "expertcolor-s3-trio",
+  "imageUrlTop": "../src/assets/videocards/expertcolor-s3-trio_top.jpg",
+  "imageUrlBottom": "../src/assets/videocards/expertcolor-s3-trio_bottom.jpg",
+  "imageUrlBigTop": "../src/assets/videocards/big/expertcolor-s3-trio_top.jpg",
+  "imageUrlBigBottom": "../src/assets/videocards/big/expertcolor-s3-trio_bottom.jpg",
+  "vendor": "ExpertColor",
+  "name": "S3",
+  "launchDate": "1985",
+  "slot": "PCI",
+  "gpu": "S3 trio"
+}
+]
