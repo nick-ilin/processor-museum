@@ -7,7 +7,7 @@ const MainboardInfo = (props) => {
   const info = getMainboardById(props.id);
   return (
     <div className="mainboardInfo">
-      <a href={info.imageUrlBigTop} target="_blank" rel="noreferrer">
+      <a href={info.imageUrlBig} target="_blank" rel="noreferrer">
         <img className="image" src={info.imageUrl} alt={info.name} />
       </a>
       <div className="description">
