@@ -17,6 +17,7 @@ import Home from './pages/home';
 import './styles/app.scss';
 
 const App = () => (
+
   <Router>
     <Home path="/">
       <Processors path="processors">

@@ -5,16 +5,16 @@ import _ from 'lodash';
 
 import '../styles/tree.scss';
 
-let vendors;
-let devices;
-
 class VendorTree extends React.Component {
   constructor(props) {
     super(props);
-    vendors = _(props.treeData).map('vendor').uniq().value();
-    devices = _.groupBy(props.treeData, 'vendor');
+
+    this.sortingMethod = 'family'; // vendor
+    this.list = _(props.treeData).map(this.sortingMethod).uniq().value();
+    this.sortedList = this.list.sort(this.compare);
+    this.devices = _.groupBy(props.treeData, this.sortingMethod);
     this.state = {
-      collapsedBookKeeping: vendors.map(() => true),
+      collapsedBookKeeping: this.sortedList.map(() => true),
     };
   }
 
@@ -40,9 +40,9 @@ class VendorTree extends React.Component {
         collapsed={collapsedBookKeeping[i]}
         onClick={this.handleClick.bind(this, i)}
       >
-        {devices[vendor].map((device) => (
+        {this.devices[vendor].map((device) => (
           <li key={device.id}>
-            <Link to={device.id}>{device.name}</Link>
+            <Link to={device.id}>{`${device.vendor}  ${device.name}`}</Link>
           </li>
         ))}
       </TreeView>
@@ -52,7 +52,7 @@ class VendorTree extends React.Component {
   render() {
     return (
       <div className="vendorTree">
-        {vendors.map((vendor, i) => this.renderVendorTree(vendor, i))}
+        {this.sortedList.map((sortParameter, i) => this.renderVendorTree(sortParameter, i))}
       </div>
     );
   }

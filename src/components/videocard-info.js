@@ -17,6 +17,7 @@ const VideocardInfo = (props) => {
           <li>{`Дата выпуска: ${info.launchDate}`}</li>
           <li>{`Разъем: ${info.slot}`}</li>
           <li>{`GPU: ${info.gpu}`}</li>
+          <li>{`Память: ${info.ram}`}</li>
         </ul>
       </div>
     </div>
