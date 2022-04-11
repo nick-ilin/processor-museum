@@ -23,7 +23,19 @@ module.exports = {
     ],
   },
   devServer: {
-    historyApiFallback: true,
+    static: [
+      {
+        directory: path.join(__dirname),
+      },
+    ],
+    historyApiFallback: true, //{
+
+      //rewrites: [
+      //  { from: /^\/videocards/, to: '/index.html' },
+      //  { from: /^\/processors/, to: '/index.html' },
+      //  { from: /^\/mainboards/, to: '/index.html' },
+      //],
+    //},
   },
   plugins: [
     new HtmlWebpackPlugin({
