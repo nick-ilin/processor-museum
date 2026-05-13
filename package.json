@@ -35,7 +35,7 @@
     "prettier": "^2.0.5",
     "sass-loader": "^12.4.0",
     "style-loader": "^1.2.1",
-    "webpack": "^5.68.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3"
   },
@@ -46,7 +46,7 @@
     "glob-parent": "^5.1.2",
     "install": "^0.13.0",
     "lodash": "^4.17.19",
-    "npm": "^8.4.1",
+    "npm": "^8.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
