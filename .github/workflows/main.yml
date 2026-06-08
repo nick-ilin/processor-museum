@@ -44,4 +44,5 @@ jobs:
           ftp_pass: ${{ secrets.FTP_PASS }}
           ftp_protocol: ftp
           ftp_port: 21
+          force_ssl: false
           commands: mirror --continue --reverse --delete --verbose build/ ./
