@@ -1,0 +1,5 @@
+id,category,brand,name,family
+intel-4790k,cpu,intel,"Intel Core i7-4790K",i7
+intel-4690k,cpu,intel,"Intel Core i5-4690K",i7
+amd-5600x,cpu,amd,"AMD Ryzen 5 5600X",Ryzen
+nvidia-3080,gpu,nvidia,"NVIDIA GeForce RTX 3080",RTX30xx

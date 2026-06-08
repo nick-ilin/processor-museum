@@ -1,0 +1,36 @@
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.header h2 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.count {
+  font-size: 13px;
+  color: #999;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.page {
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 24px;
+  }
+}
