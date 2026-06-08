@@ -45,4 +45,7 @@ jobs:
           ftp_protocol: ftp
           ftp_port: 21
           force_ssl: false
-          commands: mirror --continue --reverse --delete --verbose build/ ./
+          commands: |
+            set ftp:passive-mode true
+            set ftp:ssl-allow no
+            mirror --continue --reverse --delete --verbose build/ ./
