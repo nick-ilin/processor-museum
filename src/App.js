@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Processors from './pages/Processors';
 import VideoCards from './pages/VideoCards';
@@ -8,7 +8,7 @@ import OtherDevices from "./pages/OtherDevices";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Processors />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="other-devices" element={<OtherDevices />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
