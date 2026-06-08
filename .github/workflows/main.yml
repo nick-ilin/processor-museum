@@ -42,4 +42,6 @@ jobs:
           ftp_host: ${{ vars.FTP_HOST }}
           ftp_user: ${{ vars.FTP_USER }}
           ftp_pass: ${{ secrets.FTP_PASS }}
+          ftp_protocol: ftp
+          ftp_port: 21
           commands: mirror --continue --reverse --delete --verbose build/ ./
