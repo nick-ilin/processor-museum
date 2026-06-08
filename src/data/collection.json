@@ -1,0 +1,37 @@
+[
+  {
+    "id": "intel-4790k",
+    "category": "cpu",
+    "brand": "intel",
+    "name": "Intel Core i7-4790K",
+    "family": "i7"
+  },
+  {
+    "id": "intel-4690k",
+    "category": "cpu",
+    "brand": "intel",
+    "name": "Intel Core i5-4690K",
+    "family": "i7"
+  },
+  {
+    "id": "amd-5600x",
+    "category": "cpu",
+    "brand": "amd",
+    "name": "AMD Ryzen 5 5600X",
+    "family": "Ryzen"
+  },
+  {
+    "id": "amd-5700x",
+    "category": "cpu",
+    "brand": "amd",
+    "name": "AMD Ryzen 5 5700X",
+    "family": "Ryzen"
+  },
+  {
+    "id": "nvidia-3080",
+    "category": "gpu",
+    "brand": "nvidia",
+    "name": "NVIDIA GeForce RTX 3080",
+    "family": "RTX30xx"
+  }
+]
