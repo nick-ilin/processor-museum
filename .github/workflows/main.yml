@@ -39,7 +39,7 @@ jobs:
       - name: Deploy files via SFTP
         uses: haukurh/lftp-action@v1
         with:
-          ftp_host: ${{ secrets.FTP_HOST }}
-          ftp_user: ${{ secrets.FTP_USER }}
+          ftp_host: ${{ vars.FTP_HOST }}
+          ftp_user: ${{ vars.FTP_USER }}
           ftp_pass: ${{ secrets.FTP_PASS }}
           commands: mirror --continue --reverse --delete --verbose build/ ./
