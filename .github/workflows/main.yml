@@ -37,14 +37,13 @@ jobs:
 
       # 6. Деплоим папку build на сервер
       - name: Deploy files via SFTP
-        uses: haukurh/lftp-action@v1
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          ftp_host: ${{ vars.FTP_HOST }}
-          ftp_user: ${{ vars.FTP_USER }}
-          ftp_pass: ${{ secrets.FTP_PASS }}
-          ftp_protocol: ftp
-          ftp_port: 21
-          force_ssl: false
-          commands: |
-            set ftp:passive-mode false
-            mirror --continue --reverse --delete --verbose build/ ./
+          server: processormuseum.narod.ru
+          username: oprocessormuseum
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./build/
+          server-dir: ./
+          protocol: ftp
+          port: 21
+          log-level: verbose
