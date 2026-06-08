@@ -1,1 +1,52 @@
+name: Deploy via SFTP
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Клонируем репозиторий
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 2. Устанавливаем Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 3. Устанавливаем зависимости
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Генерируем JSON из CSV
+      - name: Build data
+        run: npm run build:data
+
+      # 5. Собираем React-приложение
+      - name: Build React app
+        run: npm run build
+
+      # 6. Деплоим папку build на сервер
+      - name: Deploy files via SFTP
+        uses: pressidium/lftp-mirror-action@v1
+        with:
+          protocol: ftp
+          host: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USER }}
+          pass: ${{ secrets.FTP_PASS }}
+          onlyNewer: true
+          settings: 'sftp:auto-confirm=yes'
+          localDir: './build'
+          remoteDir: '.'
+          reverse: true
+          ignoreFile: '.lftp_ignore'
+          options: '--verbose'
