@@ -35,8 +35,8 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      # Шаг 1: Удаляем старые js/css файлы
-      - name: Clean old js/css files
+      # Загрузка на FTP
+      - name: Deploy via FTP
         uses: haukurh/lftp-action@v1
         with:
           ftp_host: ${{ vars.FTP_HOST }}
@@ -46,25 +46,8 @@ jobs:
           ftp_port: 21
           force_ssl: false
           commands: |
+            open -u ${{ vars.FTP_USER }},${{ secrets.FTP_PASS }} ftp://${{ vars.FTP_HOST }}
             set ftp:passive-mode true
-            cd static/js
-            rm -f main.*.js
-            rm -f main.*.js.map
-            rm -f *.LICENSE.txt
-            cd ../css
-            rm -f main.*.css
-            cd ../..
-
-      # Шаг 2: Загружаем новую сборку
-      - name: Deploy new build
-        uses: haukurh/lftp-action@v1
-        with:
-          ftp_host: ${{ vars.FTP_HOST }}
-          ftp_user: ${{ vars.FTP_USER }}
-          ftp_pass: ${{ secrets.FTP_PASS }}
-          ftp_protocol: ftp
-          ftp_port: 21
-          force_ssl: false
-          commands: |
-            set ftp:passive-mode true
-            mirror --continue --reverse --verbose build/ ./
+            set ftp:ssl-allow no
+            mirror --continue --reverse --delete --verbose build/ ./
+            quit
