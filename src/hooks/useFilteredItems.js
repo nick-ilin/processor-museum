@@ -20,11 +20,11 @@ export function useFilteredItems(items) {
     if (currentBrand !== 'all') {
       filtered = filtered.filter(item => item.brand === currentBrand);
     }
-    else if (currentFamily !== 'all') {
+    if (currentFamily !== 'all') {
       filtered = filtered.filter(item => item.family === currentFamily);
     }
 
-    return filtered;
+    return [...filtered].sort((a, b) => a.name.localeCompare(b.name));
   }, [items, currentBrand, currentFamily]);
 
   const handleBrandChange = (brand) => {
@@ -48,6 +48,6 @@ export function useFilteredItems(items) {
     currentFamily,
     filteredItems,
     handleBrandChange,
-    handleFamilyChange
+    handleFamilyChange,
   };
 }
