@@ -37,7 +37,7 @@ jobs:
 
       # 6. Деплоим папку build на сервер
       - name: Deploy files via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: processormuseum.narod.ru
           username: oprocessormuseum
