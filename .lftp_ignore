@@ -1,0 +1,13 @@
+.git/
+.vscode/
+.github/
+.gitignore
+README.md
+node_modules/
+*.log
+collection.csv
+package.json
+package-lock.json
+scripts/
+public/
+src/
