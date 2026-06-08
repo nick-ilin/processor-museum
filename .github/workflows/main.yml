@@ -13,19 +13,19 @@ jobs:
     steps:
       # 1. Клонируем репозиторий
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       # 2. Устанавливаем Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       # 3. Устанавливаем зависимости
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # 4. Генерируем JSON из CSV
       - name: Build data
@@ -39,14 +39,13 @@ jobs:
       - name: Deploy files via SFTP
         uses: pressidium/lftp-mirror-action@v1
         with:
-          protocol: ftp
-          host: ${{ secrets.FTP_HOST }}
-          user: ${{ secrets.FTP_USER }}
-          pass: ${{ secrets.FTP_PASS }}
+          host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          user: ${{ secrets.SFTP_USER }}
+          pass: ${{ secrets.SFTP_PASS }}
           onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
           localDir: './build'
           remoteDir: '.'
           reverse: true
-          ignoreFile: '.lftp_ignore'
           options: '--verbose'
