@@ -37,15 +37,9 @@ jobs:
 
       # 6. Деплоим папку build на сервер
       - name: Deploy files via SFTP
-        uses: pressidium/lftp-mirror-action@v1
+        uses: haukurh/lftp-action@v1
         with:
-          protocol: ftp
-          host: ${{ secrets.FTP_HOST }}
-          user: ${{ secrets.FTP_USER }}
-          pass: ${{ secrets.FTP_PASS }}
-          onlyNewer: true
-          settings: 'sftp:auto-confirm=yes'
-          localDir: './build'
-          remoteDir: '.'
-          reverse: true
-          options: '--verbose'
+          ftp_host: ${{ secrets.FTP_HOST }}
+          ftp_user: ${{ secrets.FTP_USER }}
+          ftp_pass: ${{ secrets.FTP_PASS }}
+          commands: mirror --continue --reverse --delete --verbose build/ ./
