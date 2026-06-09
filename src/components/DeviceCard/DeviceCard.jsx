@@ -10,7 +10,7 @@ export default function DeviceCard({ item, category }) {
   const bigImage = `/assets/big/${item.id}.jpg`;
 
   const Placeholder = () => (
-    <div className={`${styles.placeholder} ${styles[category]}`}>
+    <div className={styles.placeholder}>
       <span>📷</span>
     </div>
   );
@@ -18,23 +18,33 @@ export default function DeviceCard({ item, category }) {
   return (
     <>
       <div className={styles.card}>
-        <div className={`${styles.imageWrapper} ${styles[category]}`}
-             onClick={() => !imageError && setShowImage(true)}>
+        <div
+          className={`${styles.imageWrapper} ${styles[category]}`}
+          onClick={() => !imageError && setShowImage(true)}
+        >
           {!imageError ? (
             <img
               src={smallImage}
               alt={item.name}
-              className={`${styles.image} ${styles[category]}`}
+              className={styles.image}
               onError={() => setImageError(true)}
             />
           ) : (
-            <Placeholder/>
+            <Placeholder />
           )}
         </div>
 
         <div className={styles.cardContent}>
           <div className={styles.cardDetails}>
-            <div className={styles.cardTitle}>{item.name}</div>
+            <div className={styles.cardTitle}>
+              {item.brand} {item.name}
+            </div>
+            {item.slot && (
+              <div className={styles.cardSlot}>{item.slot}</div>
+            )}
+            {item.ram && (
+              <div className={styles.cardRam}>{item.ram} MB</div>
+            )}
           </div>
         </div>
       </div>

@@ -5,13 +5,13 @@ export function useFilteredItems(items) {
   const [currentFamily, setCurrentFamily] = useState('all');
 
   const brands = useMemo(() => {
-    const unique = ['all', ...new Set(items.map(item => item.brand))];
-    return unique;
+    const unique = [...new Set(items.map(item => item.brand))];
+    return ['all', ...unique.sort((a, b) => a.localeCompare(b))];
   }, [items]);
 
   const families = useMemo(() => {
-    const unique = ['all', ...new Set(items.map(item => item.family))];
-    return unique.sort();
+    const unique = [...new Set(items.map(item => item.family))];
+    return ['all', ...unique.sort((a, b) => a.localeCompare(b))];
   }, [items]);
 
   const filteredItems = useMemo(() => {
