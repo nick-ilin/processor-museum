@@ -6,6 +6,7 @@
 # Build output
 /build
 /dist
+/src/data/collection.json
 /.next
 
 # Environment files
@@ -59,4 +60,3 @@ yarn-error.log*
 
 # Misc
 *.local
-.DS_Store
