@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
       
       - name: Install dependencies
-        run: npm ci
+        run: npm install   # ← заменили npm ci на npm install
       
       - name: Run ESLint
         run: npm run lint
