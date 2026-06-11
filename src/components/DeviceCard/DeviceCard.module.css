@@ -111,6 +111,17 @@
   box-shadow: 0 0 4px rgba(231, 76, 60, 0.5);
 }
 
+.cardSlot {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.cardRam {
+  font-size: 12px;
+  color: #888;
+}
+
 @media (min-width: 768px) {
   .card:hover {
     transform: translateY(-4px);
