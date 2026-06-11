@@ -24,7 +24,11 @@ export function useFilteredItems(items) {
       filtered = filtered.filter(item => item.family === currentFamily);
     }
 
-    return [...filtered].sort((a, b) => a.name.localeCompare(b.name));
+    return [...filtered].sort((a, b) => {
+      const displayNameA = `${a.brand} ${a.name}`;
+      const displayNameB = `${b.brand} ${b.name}`;
+      return displayNameA.localeCompare(displayNameB);
+    });
   }, [items, currentBrand, currentFamily]);
 
   const handleBrandChange = (brand) => {
