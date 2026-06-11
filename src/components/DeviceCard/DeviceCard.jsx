@@ -32,6 +32,7 @@ export default function DeviceCard({ item, category }) {
   return (
     <>
       <div className={styles.card}>
+        <div className={styles.cardId}>#{item.id}</div>
         <div
           className={`${styles.imageWrapper} ${styles[category]}`}
           onClick={() => !imageError && setShowImage(true)}

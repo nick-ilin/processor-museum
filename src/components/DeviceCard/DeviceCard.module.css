@@ -111,6 +111,18 @@
   box-shadow: 0 0 4px rgba(231, 76, 60, 0.5);
 }
 
+.cardId {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  color: #343434;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
 @media (min-width: 768px) {
   .card:hover {
     transform: translateY(-4px);

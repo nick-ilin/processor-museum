@@ -8,37 +8,116 @@
   margin-bottom: 20px;
 }
 
-.select {
+.selectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.selectTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 16px;
   font-size: 16px;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 12px;
-  background: white;
   cursor: pointer;
-  width: 100%;
-  box-sizing: border-box;
+  transition: all 0.2s;
 }
 
-.select:focus {
-  outline: none;
+.selectTrigger:hover {
   border-color: #2c3e50;
-  box-shadow: 0 0 0 2px rgba(44,62,80,0.2);
 }
 
-.select:disabled {
-  background-color: #f5f5f5;
+.selectTrigger.open {
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.2);
+}
+
+.selectValue {
+  flex: 1;
+  color: #333;
+}
+
+.selectArrow {
   color: #999;
-  cursor: not-allowed;
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+.selectTrigger.open .selectArrow {
+  transform: rotate(180deg);
+}
+
+.clearBtn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+}
+
+.clearBtn:hover {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+}
+
+.dropdownItem:hover {
+  background: #f0f0f0;
+}
+
+.dropdownItem.active {
+  background: #2c3e50;
+  color: white;
 }
 
 @media (min-width: 768px) {
   .filterBar {
     flex-direction: row;
     gap: 16px;
+    width: 80%;
+    margin: 0 auto 24px;
   }
 
-  .select {
-    flex: 1;
+  .selectTrigger {
     padding: 12px 16px;
+  }
+
+  .clearBtn {
+    right: 36px;
   }
 }
