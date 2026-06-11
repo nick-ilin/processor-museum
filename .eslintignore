@@ -1,0 +1,9 @@
+node_modules/
+build/
+public/
+scripts/
+*.css
+*.scss
+*.svg
+*.jpg
+*.png

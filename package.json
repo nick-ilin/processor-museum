@@ -16,14 +16,20 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "csv-parser": "^3.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "csv-parser": "^3.0.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:data": "node scripts/build.js"
+    "build:data": "node scripts/build.js",
+    "lint": "eslint src/ --ext .js,.jsx",
+    "lint:fix": "eslint src/ --ext .js,.jsx --fix"
   },
   "eslintConfig": {
     "extends": [

@@ -1,3 +1,5 @@
+[![ESLint](https://github.com/nick-ilin/processor-museum/actions/workflows/lint.yml/badge.svg)](https://github.com/ваш-логин/processor-museum/actions/workflows/lint.yml)
+
 # Processor Museum — Коллекция компьютерных деталей
 
 **Processor Museum** — это веб-приложение для учёта и просмотра коллекции компьютерных деталей: процессоров, видеокарт, материнских плат и оперативной памяти. Проект оптимизирован для мобильных устройств (быстрый поиск по коллекции) и десктопов (плитки с фото).
