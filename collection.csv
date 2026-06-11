@@ -1,54 +1,31 @@
-order;category;brand;name;slot;gpu;family;ram
-1;gpu;ASUS;V9280/128M;AGP;GeForce4 Ti4200 8x;GeForce 4;128
-2;gpu;ASUS;V7100M-LP/32M(T);AGP;GeForce2;GeForce 2;32
-3;gpu;3dfx;Voodoo velocity;AGP;Voodoo velocity 100;Velocity 100;8
-4;gpu;ExpertColor;Trio 64V+;PCI;Trio64V+;Trio 64;2
-5;gpu;Noname;SiS6326;AGP;SiS 6326;SiS 6326;8
-6;gpu;Realtek;RTVGA V2 91024B;ISA;Realtek 91024;Realtek 91024;256k
-7;gpu;Matrox;G450;AGP;G450;G450;32
-8;gpu;Protac;VideoExcel AG240G;AGP;i740;I740;8
-9;gpu;Noname;i740;AGP;i740;I740;8
-10;gpu;ASUS;9200SE;AGP;Radeon 9200;Radeon 9200;64
-11;gpu;PowerColor;Radeon 9250;AGP;Radeon 9250;Radeon 9200;128
-12;gpu;Sapphire ;9600 Pro;AGP;Radeon 9600 Pro;Radeon 9600;128
-13;gpu;Sapphire ;X1650;AGP;Radeon X1650;Radeon X1600;256
-14;gpu;PowerColor;X1650 Pro;AGP;Radeon X1650 Pro;Radeon X1600;512
-15;gpu;ASUS;AH3450 ;AGP;Radeon HD3450 ;Radeon HD3400;512
-16;gpu;Gigabyte;R465D2-1GI;AGP;Radeon HD4650 ;Radeon HD4600 ;1024
-17;gpu;Acorp;Trio64 V2/DX;PCI;Trio64 V2/DX;Trio 64;1
-18;gpu;Number Nine;S3 Savage4 LT;AGP;Savage4 LT;Savage 4;8
-19;gpu;Sparkle ;S3 Trio 3D/2X ;AGP;Trio 3D/2X ;Trio 3D;4
-20;gpu;TipTop;S3 Trio 3D/2X ;AGP;Trio 3D/2X ;Trio 3D;4
-21;gpu;Noname;S3 Virge/MX;AGP;Virge/MX;Virge;4
-22;gpu;Noname;S3 Virge/DX;PCI;Virge/DX;Virge;1
-23;gpu;ASUS;AGP-V3000;AGP;Riva 128;Riva 128;4
-24;gpu;Axle;Riva Vanta;AGP;Riva Vanta;Riva Vanta;16
-25;gpu;Noname;Riva Vanta;AGP;Riva Vanta;Riva Vanta;16
-26;gpu;Noname;Riva TNT2 Pro;AGP;Riva TNT2 Pro;Riva TNT2;32
-27;gpu;Butterfly;Riva TNT2 Pro;AGP;Riva TNT2 Pro;Riva TNT2;16
-28;gpu;Palit;GeForce2 MX400;AGP;GeForce2 MX400;GeForce 2;64
-29;gpu;Noname;GeForce2 MX400;AGP;GeForce2 MX400;GeForce 2;64
-30;gpu;Noname;GeForce4 MX440SE;AGP;GeForce4 MX440SE;GeForce 4;32
-31;gpu;Noname;GeForce4 MX440 8X;AGP;GeForce4 MX440 8X;GeForce 4;64
-32;gpu;Palit;GeForce4 MX440 8X;AGP;GeForce4 MX440 8X;GeForce 4;64
-33;gpu;MSI;Geforce FX5200;AGP;Geforce FX5200;Geforce FX5200;128
-34;gpu;Chaintech ;GeForce4 Ti4200;AGP;GeForce4 Ti4200;GeForce 4;64
-35;gpu;Sparkle ;Geforce FX5500;AGP;Geforce FX5500;Geforce FX5500;128
-36;gpu;Palit;Geforce FX5500;AGP;Geforce FX5500;Geforce FX5500;256
-37;gpu;Aopen;Geforce FX5600;AGP;Geforce FX5600;Geforce FX5600;128
-38;gpu;Gigabyte;N62128DS;AGP;GeForce 6200;GeForce 6200;128
-39;gpu;ASUS;A9550GE;AGP;Radeon 9550;Radeon 9500;128
-40;gpu;ASUS;V3800/16M;AGP;Riva TNT2;Riva TNT2;16
-41;gpu;ASUS;A9600XT;AGP;Radeon 9600XT;Radeon 9600;128
-42;gpu;Sapphire ;HD3650;AGP;Radeon HD3650 ;Radeon HD3600;512
-43;gpu;Noname;GeForce4 MX440;AGP;GeForce4 MX440;GeForce 4;64
-44;gpu;ASUS;V7100PRO/32M(T);AGP;GeForce2 MX400;GeForce 2;32
-45;gpu;Gigabyte;GF1280-32E;AGP;GeForce2 MX200;GeForce 2;32
-46;gpu;Sapphire ;Radeon 9250;AGP;Radeon 9250;Radeon 9200;128
-47;gpu;ASUS;V9180SE;AGP;GeForce4 MX440 8X;GeForce 4;64
-48;gpu;Gainward;GeForce 6200A;AGP;GeForce 6200A;GeForce 6200;256
-49;gpu;Noname;Radeon 7500;AGP;Radeon 7500;Radeon 7500;64
-50;gpu;Sapphire ;9600 Pro;AGP;Radeon 9600 Pro;Radeon 9600;256
-51;gpu;His;Radeon 9600;AGP;Radeon 9600;Radeon 9600;256
-52;gpu;Sapphire ;Radeon 9600;AGP;Radeon 9600;Radeon 9600;128
-53;gpu;Palit;GeForce 7600;AGP;GeForce 7600;GeForce 7600;256
+id;category;brand;name;slot;gpuvendor;gpu;family;ram;condition;box
+1;gpu;ASUS;A9200SE/T/P/64M/A(LP);AGP;ATI;Radeon 9200;Radeon 9200;64;f;
+2;gpu;ASUS;A9550GE/TD/128M/A;AGP;ATI;Radeon 9550;Radeon 9500;128;g;
+3;gpu;ASUS;A9600XT/TD;AGP;ATI;Radeon 9600XT;Radeon 9600;128;g;
+4;gpu;ASUS;AH3450/DI/512M2D(LP);AGP;ATI;Radeon HD3450 ;Radeon HD3400;512;g;
+5;gpu;Sapphire;Radeon 9600 Pro Advanrage 128MB V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;128;;
+6;gpu;Sapphire;X1650 256M DDR2 VGA/TVO/DVI-I;AGP;ATI;Radeon X1650;Radeon X1600;256;g;
+7;gpu;Sapphire;HD3650 512M DDR3 VGA/TVO/DVI-I;AGP;ATI;Radeon HD3650 ;Radeon HD3600;512;g;
+8;gpu;Sapphire;Radeon 9250 128MB V/D/VO;AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+9;gpu;Sapphire;Radeon 9600Pro 256M DDR V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;256;f;
+10;gpu;Sapphire;Radeon X700Pro 128MB V/D/VO;AGP;ATI;Radeon X700 Pro;Radeon X700;128;f;
+11;gpu;Sapphire;Radeon 9600 256MB DDR V/D/VO;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
+12;gpu;PowerColor;R92L-LC3(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+13;gpu;PowerColor;X1650 Pro;AGP;ATI;Radeon X1650 Pro;Radeon X1600;512;g;
+14;gpu;PowerColor;R96-NC3;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
+15;gpu;Gigabyte;GV-R465D2-1GI;AGP;ATI;Radeon HD4650 ;Radeon HD4600;1024;g;1
+16;gpu;HIS;Radeon 9600 256MB DDR 128bit;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
+17;gpu;Noname;Radeon 7500;AGP;ATI;Radeon 7500;Radeon 7500;64;g;
+18;gpu;ATI;3D Rage Pro AGP 2X;PCI;ATI;3D Rage Pro;3D Rage;4;g;
+19;gpu;ATI;Mach64 VT;PCI;ATI;ATI-264VT2;ATI-264;4;g;
+20;gpu;Noname;Radeon 9250(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+21;gpu;Sapphire;Radeon 9250 128MB V/D/VO;AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+22;gpu;Noname;Radeon 9200 w/128Mb DDR(LP);AGP;ATI;Radeon 9200;Radeon 9200;128;g;
+23;gpu;Sapphire;Radeon 9250 128M DDR V/D/VO(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+24;gpu;Noname;Radeon 9600 128M/128B/W/TV/DVI;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
+25;gpu;Gigabyte;GV-R955128D;AGP;ATI;Radeon 9550 ;Radeon 9500;128;;
+26;gpu;Gigabyte;GV-R925128T(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;;
+27;gpu;Super;Rage 128 Ultra SDR;AGP;ATI;Rage 128 Ultra;Rage 128;16;;
+28;gpu;Sapphire;Radeon 9800 Atlantis 128M 128-bit DDR V/D/VO;AGP;ATI;Radeon 9800;Radeon 9800;128;;
+29;gpu;Noname;Rage 128;AGP;ATI;Rage 128;Rage 128;16;;
+30;gpu;Sapphire;Radeon 9550 128MB DDR V/D/VO;AGP;ATI;Radeon 9550;Radeon 9500;128;;
