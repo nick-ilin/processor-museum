@@ -1,4 +1,4 @@
-id;category;brand;name;slot;gpuvendor;gpu;family;ram;condition;box
+id;category;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 1;gpu;ASUS;A9200SE/T/P/64M/A(LP);AGP;ATI;Radeon 9200;Radeon 9200;64;f;
 2;gpu;ASUS;A9550GE/TD/128M/A;AGP;ATI;Radeon 9550;Radeon 9500;128;g;
 3;gpu;ASUS;A9600XT/TD;AGP;ATI;Radeon 9600XT;Radeon 9600;128;g;
@@ -13,7 +13,7 @@ id;category;brand;name;slot;gpuvendor;gpu;family;ram;condition;box
 12;gpu;PowerColor;R92L-LC3(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
 13;gpu;PowerColor;X1650 Pro;AGP;ATI;Radeon X1650 Pro;Radeon X1600;512;g;
 14;gpu;PowerColor;R96-NC3;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
-15;gpu;Gigabyte;GV-R465D2-1GI;AGP;ATI;Radeon HD4650 ;Radeon HD4600;1024;g;1
+15;gpu;Gigabyte;GV-R465D2-1GI;AGP;ATI;Radeon HD4650 ;Radeon HD4600;1024;g;BOX
 16;gpu;HIS;Radeon 9600 256MB DDR 128bit;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
 17;gpu;Noname;Radeon 7500;AGP;ATI;Radeon 7500;Radeon 7500;64;g;
 18;gpu;ATI;3D Rage Pro AGP 2X;PCI;ATI;3D Rage Pro;3D Rage;4;g;
