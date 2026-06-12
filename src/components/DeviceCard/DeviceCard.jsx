@@ -9,7 +9,6 @@ export default function DeviceCard({ item, category }) {
   const smallImage = `/assets/${item.id}.jpg`;
   const bigImage = `/assets/big/${item.id}.jpg`;
 
-  // Функция для получения стиля состояния
   const getConditionStyle = () => {
     switch (item.condition) {
       case 'g':
@@ -62,7 +61,7 @@ export default function DeviceCard({ item, category }) {
           </div>
           <div className={styles.cardDetails}>
             {item.slot && (
-              <div>{item.gpuvendor} {item.gpu} {item.slot} {item.ram}Mb {item.box === "1" ? "BOX" : ""}</div>
+              <div>{item.gpuvendor} {item.gpu} {item.slot} {item.ram}Mb {item.addinfo}</div>
             )}
           </div>
         </div>
