@@ -49,11 +49,13 @@ processor-museum/
 Файл collection.csv в корне проекта.
 
 Колонки:
--   `id` — уникальный идентификатор (например, intel-4790k)
--   `category` — тип устройства (cpu, gpu, motherboard, ram)
--   `brand` — производитель (Intel, AMD, NVIDIA)
--   `family` — семейство (Core i7, Ryzen 5, GeForce RTX)
+-   `id` — уникальный идентификатор
+-   `category` — тип устройства (cpu, gpu, mb, ram)
+-   `brand` — производитель (ASUS, Intel, AMD)
+-   `family` — семейство (Pentium 1, Athlon XP, GeForce FX5600)
 -   `name` — полное название устройства
+-   `slot` — разьем устройства
+-   `condition` — состояние устройства (работает, не работает, артефакты)
 
 Пример строки: `intel-4790k,cpu,Intel,Core i7,"Intel Core i7-4790K"`
 
@@ -98,6 +100,7 @@ processor-museum/
 -   `npm start` — запуск dev-сервера
 -   `npm run build` — сборка для продакшена
 -   `npm run build:data` — генерация `collection.json` из CSV и фото
+-   `npm run lint` — проверка кода с помощью ESlint
 
 ## CI/CD
 
@@ -108,7 +111,7 @@ processor-museum/
 2.  Собрать проект (`npm run build`)
 3.  Синхронизировать папку `build/` с FTP-сервером
 
-Логин и пароль хранить в Secrets (`FTP_USER`, `FTP_PASSWORD`).
+Логин и пароль хранить в Secrets (`FTP_USER`, `FTP_PASS`).
 
 ## Лицензия
 
