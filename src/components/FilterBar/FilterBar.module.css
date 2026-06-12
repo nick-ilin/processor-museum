@@ -1,11 +1,6 @@
-.filterBar {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 16px;
-  background: #f8f9fa;
-  border-radius: 16px;
-  margin-bottom: 20px;
+.selectWrapper {
+  position: relative;
+  width: 100%;
 }
 
 .selectWrapper {
@@ -105,12 +100,42 @@
   color: white;
 }
 
+.filterBar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.filterStats {
+  text-align: center;
+  font-size: 9px;
+  color: #888;
+}
+
+.filterBarWrapper {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   .filterBar {
-    flex-direction: row;
-    gap: 16px;
     width: 80%;
     margin: 0 auto 24px;
+  }
+
+  .filterBarWrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  .filterStats {
+    text-align: right;
   }
 
   .selectTrigger {
