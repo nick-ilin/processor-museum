@@ -8,6 +8,8 @@ export default function FilterBar({
                                     currentFamily,
                                     onBrandChange,
                                     onFamilyChange,
+                                    totalCount,
+                                    filteredCount
                                   }) {
   const [brandOpen, setBrandOpen] = useState(false);
   const [familyOpen, setFamilyOpen] = useState(false);
@@ -57,66 +59,70 @@ export default function FilterBar({
 
   return (
     <div className={styles.filterBar}>
-      <div className={styles.selectWrapper} ref={brandRef}>
-        <div
-          className={`${styles.selectTrigger} ${brandOpen ? styles.open : ''}`}
-          onClick={() => setBrandOpen(!brandOpen)}
-        >
-          <span className={styles.selectValue}>{getBrandLabel()}</span>
-          <span className={styles.selectArrow}>▼</span>
-        </div>
-        {currentBrand !== 'all' && (
-          <button className={styles.clearBtn} onClick={clearBrand} title="Сбросить">
-            ✕
-          </button>
-        )}
-        {brandOpen && (
-          <div className={styles.dropdown}>
-            {brands.map(brand => (
-              <div
-                key={brand}
-                className={`${styles.dropdownItem} ${currentBrand === brand ? styles.active : ''}`}
-                onClick={() => handleBrandSelect(brand)}
-              >
-                {brand === 'all' ? 'Все производители' : brand}
-              </div>
-            ))}
+      <div className={styles.filterBarWrapper}>
+        <div className={styles.selectWrapper} ref={brandRef}>
+          <div
+            className={`${styles.selectTrigger} ${brandOpen ? styles.open : ''}`}
+            onClick={() => setBrandOpen(!brandOpen)}
+          >
+            <span className={styles.selectValue}>{getBrandLabel()}</span>
+            <span className={styles.selectArrow}>▼</span>
           </div>
-        )}
-      </div>
-
-      <div className={styles.selectWrapper} ref={familyRef}>
-        <div
-          className={`${styles.selectTrigger} ${familyOpen ? styles.open : ''}`}
-          onClick={() => setFamilyOpen(!familyOpen)}
-        >
-          <span className={styles.selectValue}>{getFamilyLabel()}</span>
-          <span className={styles.selectArrow}>▼</span>
-        </div>
-        {currentFamily !== 'all' && (
-          <button className={styles.clearBtn} onClick={clearFamily} title="Сбросить">
-            ✕
-          </button>
-        )}
-        {familyOpen && (
-          <div className={styles.dropdown}>
-            <div
-              className={`${styles.dropdownItem} ${currentFamily === 'all' ? styles.active : ''}`}
-              onClick={() => handleFamilySelect('all')}
-            >
-              Все семейства
+          {currentBrand !== 'all' && (
+            <button className={styles.clearBtn} onClick={clearBrand} title="Сбросить">
+              ✕
+            </button>
+          )}
+          {brandOpen && (
+            <div className={styles.dropdown}>
+              {brands.map(brand => (
+                <div
+                  key={brand}
+                  className={`${styles.dropdownItem} ${currentBrand === brand ? styles.active : ''}`}
+                  onClick={() => handleBrandSelect(brand)}
+                >
+                  {brand === 'all' ? 'Все производители' : brand}
+                </div>
+              ))}
             </div>
-            {families.filter(f => f !== 'all').map(family => (
-              <div
-                key={family}
-                className={`${styles.dropdownItem} ${currentFamily === family ? styles.active : ''}`}
-                onClick={() => handleFamilySelect(family)}
-              >
-                {family}
-              </div>
-            ))}
+          )}
+        </div>
+        <div className={styles.selectWrapper} ref={familyRef}>
+          <div
+            className={`${styles.selectTrigger} ${familyOpen ? styles.open : ''}`}
+            onClick={() => setFamilyOpen(!familyOpen)}
+          >
+            <span className={styles.selectValue}>{getFamilyLabel()}</span>
+            <span className={styles.selectArrow}>▼</span>
           </div>
-        )}
+          {currentFamily !== 'all' && (
+            <button className={styles.clearBtn} onClick={clearFamily} title="Сбросить">
+              ✕
+            </button>
+          )}
+          {familyOpen && (
+            <div className={styles.dropdown}>
+              <div
+                className={`${styles.dropdownItem} ${currentFamily === 'all' ? styles.active : ''}`}
+                onClick={() => handleFamilySelect('all')}
+              >
+                Все семейства
+              </div>
+              {families.filter(f => f !== 'all').map(family => (
+                <div
+                  key={family}
+                  className={`${styles.dropdownItem} ${currentFamily === family ? styles.active : ''}`}
+                  onClick={() => handleFamilySelect(family)}
+                >
+                  {family}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+      <div className={styles.filterStats}>
+        <span>Показано устройств: {filteredCount} из {totalCount}</span>
       </div>
     </div>
   );

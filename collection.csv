@@ -29,3 +29,4 @@ id;category;brand;name;slot;gpuvendor;gpu;family;ram;condition;box
 28;gpu;Sapphire;Radeon 9800 Atlantis 128M 128-bit DDR V/D/VO;AGP;ATI;Radeon 9800;Radeon 9800;128;;
 29;gpu;Noname;Rage 128;AGP;ATI;Rage 128;Rage 128;16;;
 30;gpu;Sapphire;Radeon 9550 128MB DDR V/D/VO;AGP;ATI;Radeon 9550;Radeon 9500;128;;
+31;gpu;Noname;ATI9550 128M TV & DVI 128 Bit;AGP;ATI;Radeon 9550;Radeon 9500;128;;
