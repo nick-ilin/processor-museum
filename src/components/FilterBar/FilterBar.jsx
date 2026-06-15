@@ -121,9 +121,11 @@ export default function FilterBar({
           )}
         </div>
       </div>
-      <div className={styles.filterStats}>
-        <span>Показано устройств: {filteredCount} из {totalCount}</span>
-      </div>
+      {totalCount > 0 && (
+        <div className={styles.filterStats}>
+          <span>Показано устройств: {filteredCount} из {totalCount}</span>
+        </div>
+      )}
     </div>
   );
 }
