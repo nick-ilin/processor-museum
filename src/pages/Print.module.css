@@ -1,0 +1,81 @@
+.printContainer {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+.stickerId {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.stickerBrand {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.stickerModel {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.stickerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 0;
+  padding-top: 5mm;
+  padding-left: 10mm;
+  padding-right: 5mm;
+  box-sizing: border-box;
+}
+
+.stickerCell {
+  width: 7cm;
+  height: 2.5cm;
+  border: 0.5px solid #ccc;
+  padding: 6px 8px;
+  text-align: left;
+  box-sizing: border-box;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .printContainer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .stickerGrid {
+    padding-top: 5mm;
+    padding-left: 5mm;
+    padding-right: 5mm;
+  }
+
+  .stickerCell {
+    border: 0.5px solid #aaa;
+  }
+}
+
+@media screen {
+  .stickerGrid {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .stickerCell {
+    border: 0.5px solid #ddd;
+  }
+}
