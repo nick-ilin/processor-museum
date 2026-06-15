@@ -5,6 +5,7 @@ import VideoCards from './pages/VideoCards';
 import MainBoards from './pages/MainBoards';
 import Rams from "./pages/Rams";
 import OtherDevices from "./pages/OtherDevices";
+import Print from "./pages/Print";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="rams" element={<Rams />} />
           <Route path="other-devices" element={<OtherDevices />} />
         </Route>
+        <Route path="/print" element={<Print />} />
       </Routes>
     </HashRouter>
   );
