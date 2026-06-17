@@ -18,4 +18,10 @@
     justify-content: center;
     gap: 20px;
   }
+
+  .deviceList.cpu {
+    grid-template-columns: repeat(auto-fit, 220px);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

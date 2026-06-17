@@ -1,0 +1,104 @@
+id;brand;family;frequency;spec;core;name;condition;addinfo
+1;Intel;Socket 3;100;SK096;;486DX4;;
+2;Intel;Socket 3;66;SX762;;486DX2;;
+3;Intel;Socket 3;25;SX798;;486SX;;
+4;Intel;PGA132;25;SX218;;386DX;;
+5;Intel;Socket 1;66;SZ935;;Overdrive DX200PR66;;
+6;AMD;Socket 3;40;NG80386DX-40;;Am386DX-40;;
+7;AMD;Socket 3;75;AMD-X5-133ADZ;;Am5x86-P75;;
+8;AMD;Socket 3;75;AMD-X5-133ADW;;Am5x86-P75;;
+9;AMD;Socket 3;100;A80486DX4-100SV8B;;Am486Dx4-100;;
+10;AMD;Socket 3;80;A80486DX2-80N;;Am486Dx2-80;;
+11;AMD;Socket 3;66;A80486DX2-66;;Am486Dx2-66;;
+12;AMD;Socket 3;66;A80486DX2-66NV8T;;Am486Dx2-66;;
+13;AMD;Socket 939;3000;ADA3000DAA4BW;Venice;Athlon64;;
+14;AMD;Socket 939;3200;ADA3200DAA4BW;Venice;Athlon64;;
+15;AMD;Socket 939;3500;ADA3500DAA4BW;Venice;Athlon64;;
+16;AMD;Socket 754;2600;SDA2600AI02BX;Palermo;Sempron;;
+17;Texas Instruments;PGA132;33;TX486DLC-33GA;;486;;
+18;Texas Instruments;Socket 3;80;TI486DX2-G80-GA;;486DX2-80;;
+19;Cyrix;Socket 3;66;CX486DX2-66GP;;CX486;;
+20;UMC;Socket 3;;U5S-SUPER33;;Green CPU;;
+21;Intel;Socket 7;150;SY015;P54CS;Pentium I;;
+22;Intel;Socket 7;166;SY016;P54CS;Pentium I;;
+23;Intel;Socket 7;100;SY007;P54CS;Pentium I;;
+24;Intel;Socket 7;120;SY062;P54CS;Pentium I;;
+25;Intel;Socket 7;133;SU022;P54CS;Pentium I;;
+26;Intel;Socket 7;75;SY005;P54C;Pentium I;g;
+27;Intel;Socket 7;166;SL27K;P55C;Pentium I MMX;;CPGA
+28;Intel;Socket 7;166;SL239;P55C;Pentium I MMX;;CPGA
+29;Intel;Socket 7;200;SL2RY;P55C;Pentium I MMX;;CPGA
+30;Intel;Socket 7;200;SL27J;P55C;Pentium I MMX;;PPGA
+31;Intel;Socket 7;166;SL27H;P55C;Pentium I MMX;;PPGA
+32;Intel;Socket 7;200;SY045;P54CS;Pentium I;;PPGA
+33;Intel;Socket 7;166;SY037;P54CS;Pentium I;;PPGA
+34;AMD;Socket 7;90;AMD-K5-PR90ABQ;;AMD-K5;;
+35;AMD;Socket 7;75;AMD-SSA/5-75ABR;;AMD5k86-P75;;
+36;AMD;Socket 7;200;AMD-K6-200ALR;Model 6;AMD-K6;;
+37;AMD;Socket 7;400;AMD-K6-2/400AFQ;;AMD-K6-2;;
+38;AMD;Socket 7;300;AMD-K6-2/300AFR-66;Chompers;AMD-K6-2;;
+39;AMD;Socket 7;500;AMD-K6-2/500AFX;CXT;AMD-K6-2;;
+40;AMD;Socket 7;133;AMD-K5-PR133ABR;;AMD-K5;;
+41;IBM;Socket 7;166;IBM26x86MX-AVAPR166GB;;6x86MX PR166;;
+42;Cyrix;Socket 7;333;MII-333GP;;MIIv;;
+43;Cyrix;Socket 7;266;MII-266GP;;MII;g;
+44;Cyrix;Socket 7;300;MII-300GP;;MII;g;
+45;Intel;PLCC68;12;N80286-12;;286;;
+46;AMD;PLCC68;12;N80L286-12/S;;286;;
+47;Harris;PLCC68;20;CS80C286-20;;286;;
+48;Intel;DIP40;10;D80287-10;;287;;MATH
+49;Intel;DIP40;12;C80287XL;;287;;MATH
+50;IIT;DIP40;8;2C87A02SMBC;;287;;MATH
+51;IIT;PLCC68;25;3C87SX-25;;387;;MATH
+52;IIT;PGA68;40;3C87-40;;387;;MATH
+53;IIT;PGA68;40;4C87DLC-40;;487;;MATH
+54;ULSI;PGA68;33;387DX-33;;387;;MATH
+55;ULSI;PGA68;33;387DX-33;;387;;MATH
+56;Intel;Socket 370;500;SL3FY;Mendocino;Celeron;;
+57;Intel;Socket 370;433;SL3BA;Mendocino;Celeron;;
+58;Intel;Socket 370;466;SL3EH;Mendocino;Celeron;;
+59;Intel;Socket 370;366;SL36C;Mendocino;Celeron;;
+60;Intel;Socket 370;333;SL36B;Mendocino;Celeron;;
+61;Intel;Socket 370;300;SL36A;Mendocino;Celeron;;
+62;Intel;Socket 370;1133;SL5GQ;Tualatin;Pentium III;g;
+63;Intel;Socket 370;900;SL633;Coppermine;Celeron;;
+64;Intel;Socket 370;1300;SL5ZJ;Tualatin;Celeron;g;
+65;Intel;Socket 370;1100;SL5ZE;Tualatin;Celeron;g;
+66;Intel;Socket 370;1300;SL6C7;Tualatin;Celeron;g;
+67;Intel;Socket 370;1200;SL6BP;Tualatin;Celeron;g;
+68;Intel;Socket 423;1500;SL5SX;Willamette;Pentium 4;;
+69;Intel;Socket 370;600;SL4PB;Coppermine;Celeron;;
+70;Intel;Socket 370;766;SL4P6;Coppermine;Celeron;g;
+71;Intel;Socket 370;850;SL5GA;Coppermine;Celeron;g;
+72;Intel;Socket 370;800;SL54P;Coppermine;Celeron;;
+73;Intel;Socket 370;600;SL46U;Coppermine;Celeron;;
+74;Intel;Socket 370;633;SL3VS;Coppermine;Celeron;g;
+75;Intel;Socket 370;677;SL4P9;Coppermine;Celeron;;
+76;Intel;Socket 370;733;SL52Y;Coppermine;Celeron;;
+77;Intel;Socket 370;566;SL4PC;Coppermine;Celeron;g;
+78;Intel;Socket 370;800;SL52P;Coppermine;Pentium III;;
+79;Intel;Socket 370;733;SL4CG;Coppermine;Pentium III;;
+80;Intel;Socket 370;700;SL4P8;Coppermine;Celeron;f;
+81;Intel;Socket 370;800;SL5EB;Coppermine;Celeron;;
+82;Intel;Socket 370;950;SL5UZ;Coppermine;Celeron;g;
+83;Intel;Socket 370;1000;SL5XT;Coppermine;Celeron;;
+84;AMD;Socket A;900;A0900AMT3B;Thunderbird;Athlon;;
+85;AMD;Socket A;700;D700AUT1B;Spitfire;Duron;;
+86;AMD;Socket A;750;D750AUT1B;Spitfire;Duron;;
+87;AMD;Socket A;1000;DHD1000AMT1B;Morgan;Duron;;
+88;AMD;Socket A;1100;DHD1100AMT1B;Morgan;Duron;;
+89;AMD;Socket A;1200;DHD1200AMT1B;Morgan;Duron;;
+90;AMD;Socket A;950;A0950DMT3B;Thunderbird;Athlon;;
+91;AMD;Socket A;1700;AXDA1700DUT3C;Thoroughbred;Athlon XP;;
+92;AMD;Socket A;1800;AXDA1800DUT3C;Thoroughbred;Athlon XP;;
+93;AMD;Socket A;2000;AXDA1900DUT3C;Thoroughbred;Athlon XP;;
+94;AMD;Socket A;2400;AXDC2400DKV3C;Thorton;Athlon XP;;
+95;AMD;Socket A;2500;AXDA2500DKV4D;Barton;Athlon XP;;
+96;AMD;Socket A;2500;AXDA2500DLV4D;Barton;Athlon XP;;
+97;AMD;Socket A;2600;AXDA2600DKV4D;Barton;Athlon XP;;
+98;AMD;Socket A;2900;AXDA2900DKV4E;Barton;Athlon XP;;
+99;AMD;Socket A;3000;AXDA3000DKV4D;Barton;Athlon XP;;
+100;AMD;Socket A;2300;SDA2300DUT3D;Thoroughbred;Sempron;;
+101;AMD;Socket A;2500;SDA2500DUT3D;Thoroughbred;Sempron;;
+102;AMD;Socket A;2600;SDA2600DUT3D;Thoroughbred;Sempron;;
+103;AMD;Socket A;2800;SDA2800DUT3D;Thoroughbred;Sempron;;

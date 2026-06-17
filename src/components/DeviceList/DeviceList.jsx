@@ -10,8 +10,10 @@ export default function DeviceList({ items, category }) {
     );
   }
 
+  const gridClass = `${styles.deviceList} ${category === 'cpu' ? styles.cpu : ''}`;
+
   return (
-    <div className={styles.deviceList}>
+    <div className={gridClass}>
       {items.map(item => (
         <DeviceCard
           key={item.id}
