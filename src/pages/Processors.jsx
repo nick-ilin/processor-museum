@@ -27,6 +27,8 @@ export default function Processors() {
         currentFamily={currentFamily}
         onBrandChange={handleBrandChange}
         onFamilyChange={handleFamilyChange}
+        totalCount={items.length}
+        filteredCount={filteredItems.length}
       />
       <DeviceList items={filteredItems} category="cpu" />
     </div>

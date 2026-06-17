@@ -1,4 +1,4 @@
-.card {
+.device {
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -34,10 +34,22 @@
 }
 
 .imageWrapper.gpu {
-  height: 180px;
+  height: 160px;
 }
 
 .imageWrapper.gpu .image {
+  width: auto;
+  height: auto;
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.imageWrapper.mb {
+  height: 160px;
+}
+
+.imageWrapper.mb .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -54,17 +66,17 @@
   font-size: 36px;
 }
 
-.cardContent {
+.deviceContent {
   padding: 12px;
 }
 
-.cardDetails {
+.deviceDetails {
   font-size: 13px;
   color: #666;
   margin-bottom: 2px;
 }
 
-.cardHeader {
+.deviceHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +84,7 @@
   margin-bottom: 4px;
 }
 
-.cardTitle {
+.deviceTitle {
   font-weight: bold;
   font-size: 14px;
   color: #2c3e50;
@@ -101,7 +113,7 @@
   box-shadow: 0 0 4px rgba(231, 76, 60, 0.5);
 }
 
-.cardId {
+.deviceId {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -114,7 +126,7 @@
 }
 
 @media (min-width: 768px) {
-  .card:hover {
+  .device:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -127,7 +139,7 @@
 }
 
 @media (max-width: 767px) {
-  .card {
+  .device {
     flex-direction: row;
     max-width: 100%;
     margin: 0;
@@ -167,12 +179,12 @@
     justify-content: center;
   }
 
-  .cardContent {
+  .deviceContent {
     padding: 0;
     flex: 1;
   }
 
-  .cardTitle {
+  .deviceTitle {
     font-size: 16px;
     font-weight: normal;
     padding-left: 0;
@@ -180,11 +192,11 @@
     line-height: 1.4;
   }
 
-  .cardSlot{
+  .deviceSlot{
     font-size: 11px;
   }
 
-  .cardHeader {
+  .deviceHeader {
     margin-bottom: 2px;
   }
 

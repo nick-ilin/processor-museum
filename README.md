@@ -31,7 +31,7 @@ processor-museum/
 │ └── index.html
 ├── src/
 │ ├── components/ # переиспользуемые компоненты
-│ ├── pages/ # страницы (CPU, GPU, MB, RAM)
+│ ├── pages/ # страницы (CPU, GPU, MB)
 │ ├── hooks/ # кастомные хуки
 │ ├── data/ # сгенерированный collection.json
 │ ├── styles/ # глобальные стили
@@ -50,7 +50,7 @@ processor-museum/
 
 Колонки:
 -   `id` — уникальный идентификатор
--   `category` — тип устройства (cpu, gpu, mb, ram)
+-   `category` — тип устройства (cpu, gpu, mb)
 -   `brand` — производитель (ASUS, Intel, AMD)
 -   `family` — семейство (Pentium 1, Athlon XP, GeForce FX5600)
 -   `name` — полное название устройства

@@ -2,7 +2,7 @@
   "name": "hardware-collection",
   "version": "1.0.0",
   "private": true,
-  "description": "Личная коллекция компьютерных деталей (CPU, GPU, MB, RAM)",
+  "description": "Личная коллекция компьютерных деталей (CPU, GPU, MB)",
   "author": "Nick Ilin",
   "license": "MIT",
   "dependencies": {

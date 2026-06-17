@@ -1,0 +1,32 @@
+id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
+1;ASUS;A9200SE/T/P/64M/A(LP);AGP;ATI;Radeon 9200;Radeon 9200;64;f;
+2;ASUS;A9550GE/TD/128M/A;AGP;ATI;Radeon 9550;Radeon 9500;128;g;
+3;ASUS;A9600XT/TD;AGP;ATI;Radeon 9600XT;Radeon 9600;128;g;
+4;ASUS;AH3450/DI/512M2D(LP);AGP;ATI;Radeon HD3450 ;Radeon HD3400;512;g;
+5;Sapphire;Radeon 9600 Pro Advanrage 128MB V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;128;;
+6;Sapphire;X1650 256M DDR2 VGA/TVO/DVI-I;AGP;ATI;Radeon X1650;Radeon X1600;256;g;
+7;Sapphire;HD3650 512M DDR3 VGA/TVO/DVI-I;AGP;ATI;Radeon HD3650 ;Radeon HD3600;512;g;
+8;Sapphire;Radeon 9250 128MB V/D/VO;AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+9;Sapphire;Radeon 9600Pro 256M DDR V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;256;f;
+10;Sapphire;Radeon X700Pro 128MB V/D/VO;AGP;ATI;Radeon X700 Pro;Radeon X700;128;f;
+11;Sapphire;Radeon 9600 256MB DDR V/D/VO;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
+12;PowerColor;R92L-LC3(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+13;PowerColor;X1650 Pro;AGP;ATI;Radeon X1650 Pro;Radeon X1600;512;g;
+14;PowerColor;R96-NC3;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
+15;Gigabyte;GV-R465D2-1GI;AGP;ATI;Radeon HD4650 ;Radeon HD4600;1024;g;BOX
+16;HIS;Radeon 9600 256MB DDR 128bit;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
+17;Noname;Radeon 7500;AGP;ATI;Radeon 7500;Radeon 7500;64;g;
+18;ATI;3D Rage Pro AGP 2X;PCI;ATI;3D Rage Pro;3D Rage;4;g;
+19;ATI;Mach64 VT;PCI;ATI;ATI-264VT2;ATI-264;4;g;
+20;Noname;Radeon 9250(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+21;Sapphire;Radeon 9250 128MB V/D/VO;AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+22;Noname;Radeon 9200 w/128Mb DDR(LP);AGP;ATI;Radeon 9200;Radeon 9200;128;g;
+23;Sapphire;Radeon 9250 128M DDR V/D/VO(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+24;Noname;Radeon 9600 128M/128B/W/TV/DVI;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
+25;Gigabyte;GV-R955128D;AGP;ATI;Radeon 9550 ;Radeon 9500;128;;
+26;Gigabyte;GV-R925128T(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;;
+27;Super;Rage 128 Ultra SDR;AGP;ATI;Rage 128 Ultra;Rage 128;16;;
+28;Sapphire;Radeon 9800 Atlantis 128M 128-bit DDR V/D/VO;AGP;ATI;Radeon 9800;Radeon 9800;128;;
+29;Noname;Rage 128;AGP;ATI;Rage 128;Rage 128;16;;
+30;Sapphire;Radeon 9550 128MB DDR V/D/VO;AGP;ATI;Radeon 9550;Radeon 9500;128;;
+31;Noname;ATI9550 128M TV & DVI 128 Bit;AGP;ATI;Radeon 9550;Radeon 9500;128;;
