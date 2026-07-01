@@ -25,6 +25,8 @@
 
 ```
 processor-museum/
+├── csv/
+│ └── cpu.csv # файлы с коллекциями (cpu.csv, gpu.csv, mb.csv)
 ├── public/
 │ ├── assets/ # миниатюры (160x160 / 16:9 / 4:3)
 │ │ └── big/ # полноразмерные фото
@@ -39,7 +41,6 @@ processor-museum/
 │ └── index.js
 ├── scripts/
 │ └── build.js # скрипт сборки из CSV → JSON
-├── collection.csv # файл с коллекцией (редактируйте здесь!)
 ├── package.json
 └── README.md
 ```
@@ -80,7 +81,7 @@ processor-museum/
     `npm install`
 
 3.  Подготовить данные
-    Положите файл `collection.csv` в корень проекта, а фото — в `public/assets/`.
+    Положите файл `cpu.csv` в папку csv/, а фото — в `public/assets/cpu`.
 
 4.  Сгенерировать JSON
     `npm run build:data`
@@ -104,7 +105,7 @@ processor-museum/
 
 ## CI/CD
 
-Проект можно настроить на автоматический деплой по FTP при пуше в `main`.
+Проект можно настроить на автоматический деплой по FTP при слиянии в `main`.
 
 Пример логики для GitHub Actions:
 1.  Установить `lftp`
