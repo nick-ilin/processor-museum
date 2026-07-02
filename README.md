@@ -10,8 +10,8 @@
 -   **Фильтрация** по бренду и семейству.
 -   **Миниатюры и полноразмерные фото** — клик по фото открывает большое изображение.
 -   **Данные в CSV** — легко редактировать коллекцию в Excel / Google Sheets.
--   **Автоматическая сборка** — из CSV и папки с фото генерируется JSON.
--   **Готов к CI/CD** — можно настроить автодеплой на FTP.
+-   **Автоматическая сборка** — из CSV файла генерируется JSON.
+-   **Готов к CI/CD** — настроен автодеплой на FTP.
 
 ## Технологии
 
@@ -25,17 +25,16 @@
 
 ```
 processor-museum/
-├── csv/
-│ └── cpu.csv # файлы с коллекциями (cpu.csv, gpu.csv, mb.csv)
+├── csv/ # таблицы с коллекциями (cpu.csv, gpu.csv, mb.csv)
 ├── public/
-│ ├── assets/ # миниатюры (160x160 / 16:9 / 4:3)
+│ ├── assets/ # миниатюры (160x160 cpu / 240x320 gpu)
 │ │ └── big/ # полноразмерные фото
 │ └── index.html
 ├── src/
 │ ├── components/ # переиспользуемые компоненты
 │ ├── pages/ # страницы (CPU, GPU, MB)
 │ ├── hooks/ # кастомные хуки
-│ ├── data/ # сгенерированный collection.json
+│ ├── data/ # сгенерированный общий collection.json
 │ ├── styles/ # глобальные стили
 │ ├── App.jsx
 │ └── index.js
@@ -62,13 +61,13 @@ processor-museum/
 
 ## Фото
 
-Фото кладутся в `public/assets/` и `public/assets/big/`:
+Фото кладутся в `public/assets/cpu/` и `public/assets/cpu/big/`:
 
--   Миниатюры: `public/assets/intel-4790k.jpg`
--   Большие фото: `public/assets/big/intel-4790k.jpg`
+-   Миниатюры: `public/assets/cpu/intel-4790k.jpg`
+-   Большие фото: `public/assets/cpu/big/intel-4790k.jpg`
 
 Размеры:
--   Миниатюры: 160x160 (CPU), 16:9 (GPU), 4:3 (MB)
+-   Миниатюры: 160x160 (CPU), 240x320 (GPU)
 -   Полноразмерные: любые, открываются в модальном окне
 
 ## Установка и запуск
@@ -81,7 +80,7 @@ processor-museum/
     `npm install`
 
 3.  Подготовить данные
-    Положите файл `cpu.csv` в папку csv/, а фото — в `public/assets/cpu`.
+    Положите файл `cpu.csv` в папку `csv/`, а фото — в `public/assets/cpu`.
 
 4.  Сгенерировать JSON
     `npm run build:data`
