@@ -10,7 +10,7 @@ export default function DeviceList({ items, category }) {
     );
   }
 
-  const gridClass = `${styles.deviceList} ${category === 'cpu' ? styles.cpu : ''}`;
+  const gridClass = `${styles.deviceList} ${category === 'cpu' || category === 'mb' ? styles.cpu : ''}`;
 
   return (
     <div className={gridClass}>

@@ -19,7 +19,8 @@
     gap: 20px;
   }
 
-  .deviceList.cpu {
+  .deviceList.cpu,
+  .deviceList.mb {
     grid-template-columns: repeat(auto-fit, 220px);
     max-width: 1200px;
     margin: 0 auto;

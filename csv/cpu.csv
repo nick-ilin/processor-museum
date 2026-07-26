@@ -102,3 +102,5 @@ id;brand;family;frequency;spec;core;name;condition;addinfo
 101;AMD;Socket A;2500;SDA2500DUT3D;Thoroughbred;Sempron;;
 102;AMD;Socket A;2600;SDA2600DUT3D;Thoroughbred;Sempron;;
 103;AMD;Socket A;2800;SDA2800DUT3D;Thoroughbred;Sempron;;
+104;Intel;Socket 7;233;SL27S;P55C;Pentium I MMX;PPGA;;
+105;AMD;Socket A;2400;SDA2400DUT3D;Thoroughbred;Sempron;;

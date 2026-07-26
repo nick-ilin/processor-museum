@@ -5,7 +5,7 @@ const csv = require('csv-parser');
 const CSV_FILES = [
   { file: 'csv/gpu.csv', category: 'gpu' },
   { file: 'csv/cpu.csv', category: 'cpu' },
-  //{ file: 'csv/mb.csv', category: 'mb' }
+  { file: 'csv/mb.csv', category: 'mb' }
 ];
 const OUTPUT_JSON = 'src/data/collection.json';
 const allItems = [];
