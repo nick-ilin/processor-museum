@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/processors" replace />} />
           <Route path="processors" element={<Processors />} />
-          <Route path="videocards" element={<VideoCards />} />
           <Route path="mainboards" element={<MainBoards />} />
+          <Route path="videocards" element={<VideoCards />} />
           <Route path="other-devices" element={<OtherDevices />} />
         </Route>
         <Route path="/print" element={<Print />} />

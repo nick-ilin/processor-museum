@@ -45,7 +45,7 @@ export default function DeviceCard({ item, category }) {
       case 'mb':
         return (
           <div className={styles.deviceSlot}>
-            {item.chipset} {item.family}
+            {item.family}, {item.chipset}
           </div>
         );
       default:
@@ -76,7 +76,7 @@ export default function DeviceCard({ item, category }) {
         <div className={styles.deviceContent}>
           <div className={styles.deviceHeader}>
             <div className={styles.deviceTitle}>
-              {item.brand} {item.name} {item.frequency ? item.frequency + "MHz" : ""}
+              {item.brand} {item.name} {item.frequency ? item.frequency + "MHz" : ""} {item.revision}
             </div>
             {item.condition && (
               <div className={`${styles.conditionBadge} ${getConditionStyle()}`}/>

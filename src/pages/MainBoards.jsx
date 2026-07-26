@@ -27,6 +27,8 @@ export default function MainBoard() {
         currentFamily={currentFamily}
         onBrandChange={handleBrandChange}
         onFamilyChange={handleFamilyChange}
+        totalCount={items.length}
+        filteredCount={filteredItems.length}
       />
       <DeviceList items={filteredItems} category="mb" />
     </div>

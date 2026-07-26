@@ -27,6 +27,6 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 26;Gigabyte;GV-R925128T(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;;
 27;Super;Rage 128 Ultra SDR;AGP;ATI;Rage 128 Ultra;Rage 128;16;;
 28;Sapphire;Radeon 9800 Atlantis 128M 128-bit DDR V/D/VO;AGP;ATI;Radeon 9800;Radeon 9800;128;;
-29;Noname;Rage 128;AGP;ATI;Rage 128;Rage 128;16;;
+29;Noname;3D Rage;AGP;ATI;Rage 128;3D Rage;8;;
 30;Sapphire;Radeon 9550 128MB DDR V/D/VO;AGP;ATI;Radeon 9550;Radeon 9500;128;;
 31;Noname;ATI9550 128M TV & DVI 128 Bit;AGP;ATI;Radeon 9550;Radeon 9500;128;;
