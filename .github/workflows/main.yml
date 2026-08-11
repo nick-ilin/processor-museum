@@ -52,5 +52,10 @@ jobs:
             set cmd:fail-exit false
                       
             # Загружаем новую сборку
-            mirror -R --delete --verbose build/ .
+            mirror -R --delete --verbose \
+              -x ".ftpquota" \
+              -x ".htaccess" \
+              -x "_nw" \
+              -x "_si" \
+              build/ .
             quit
