@@ -39,7 +39,7 @@ id;brand;name;revision;family;chipset;condition;addinfo
 38;Asus;P5P800;;Socket 775;Intel i865G;;
 39;Gigabyte;GA-8PEMT4;rev.1.0;Socket 478;Intel i845PE;;
 40;Asus;P4SP-MX;rev.1.00;Socket 478;SiS 651;;
-41;ECS;661FX-M;rev.1.0B;Socket 478;SiS 661FX;g;
+41;ECS;661FX-M;rev.1.0B;Socket 478;SiSÂ 661FX;g;
 42;Shattle;AK35GT/GTR;rev.2.2;Socket A;VIA KT333;;
 43;Acorp;7KT266A;rev.1.1;Socket A;VIA KT266A;;
 44;Epox;EP-8KRAI-X;;Socket A;VIA KT600;;
