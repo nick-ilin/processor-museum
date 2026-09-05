@@ -1,8 +1,8 @@
 id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
-1;ASUS;A9200SE/T/P/64M/A(LP);AGP;ATI;Radeon 9200;Radeon 9200;64;f;
-2;ASUS;A9550GE/TD/128M/A;AGP;ATI;Radeon 9550;Radeon 9500;128;g;
-3;ASUS;A9600XT/TD;AGP;ATI;Radeon 9600XT;Radeon 9600;128;g;
-4;ASUS;AH3450/DI/512M2D(LP);AGP;ATI;Radeon HD3450 ;Radeon HD3400;512;g;
+1;Asus;A9200SE/T/P/64M/A (LP);AGP;ATI;Radeon 9200;Radeon 9200;64;f;
+2;Asus;A9550GE/TD/128M/A;AGP;ATI;Radeon 9550;Radeon 9500;128;g;
+3;Asus;A9600XT/TD;AGP;ATI;Radeon 9600XT;Radeon 9600;128;g;
+4;Asus;AH3450/DI/512M2D (LP);AGP;ATI;Radeon HD3450 ;Radeon HD3400;512;g;
 5;Sapphire;Radeon 9600 Pro Advanrage 128MB V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;128;;
 6;Sapphire;X1650 256M DDR2 VGA/TVO/DVI-I;AGP;ATI;Radeon X1650;Radeon X1600;256;g;
 7;Sapphire;HD3650 512M DDR3 VGA/TVO/DVI-I;AGP;ATI;Radeon HD3650 ;Radeon HD3600;512;g;
@@ -10,7 +10,7 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 9;Sapphire;Radeon 9600Pro 256M DDR V/D/VO;AGP;ATI;Radeon 9600 Pro;Radeon 9600;256;f;
 10;Sapphire;Radeon X700Pro 128MB V/D/VO;AGP;ATI;Radeon X700 Pro;Radeon X700;128;f;
 11;Sapphire;Radeon 9600 256MB DDR V/D/VO;AGP;ATI;Radeon 9600;Radeon 9600;256;g;
-12;PowerColor;R92L-LC3(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+12;PowerColor;R92L-LC3 (LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
 13;PowerColor;X1650 Pro;AGP;ATI;Radeon X1650 Pro;Radeon X1600;512;g;
 14;PowerColor;R96-NC3;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
 15;Gigabyte;GV-R465D2-1GI;AGP;ATI;Radeon HD4650 ;Radeon HD4600;1024;g;BOX
@@ -18,15 +18,70 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 17;Noname;Radeon 7500;AGP;ATI;Radeon 7500;Radeon 7500;64;g;
 18;ATI;3D Rage Pro AGP 2X;PCI;ATI;3D Rage Pro;3D Rage;4;g;
 19;ATI;Mach64 VT;PCI;ATI;ATI-264VT2;ATI-264;4;g;
-20;Noname;Radeon 9250(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+20;Noname;Radeon 9250 (LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
 21;Sapphire;Radeon 9250 128MB V/D/VO;AGP;ATI;Radeon 9250;Radeon 9200;128;g;
-22;Noname;Radeon 9200 w/128Mb DDR(LP);AGP;ATI;Radeon 9200;Radeon 9200;128;g;
-23;Sapphire;Radeon 9250 128M DDR V/D/VO(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
+22;Noname;Radeon 9200 w/128Mb DDR (LP);AGP;ATI;Radeon 9200;Radeon 9200;128;g;
+23;Sapphire;Radeon 9250 128M DDR V/D/VO (LP);AGP;ATI;Radeon 9250;Radeon 9200;128;g;
 24;Noname;Radeon 9600 128M/128B/W/TV/DVI;AGP;ATI;Radeon 9600;Radeon 9600;128;g;
 25;Gigabyte;GV-R955128D;AGP;ATI;Radeon 9550 ;Radeon 9500;128;;
-26;Gigabyte;GV-R925128T(LP);AGP;ATI;Radeon 9250;Radeon 9200;128;;
+26;Gigabyte;GV-R925128T (LP);AGP;ATI;Radeon 9250;Radeon 9200;128;;
 27;Super;Rage 128 Ultra SDR;AGP;ATI;Rage 128 Ultra;Rage 128;16;;
 28;Sapphire;Radeon 9800 Atlantis 128M 128-bit DDR V/D/VO;AGP;ATI;Radeon 9800;Radeon 9800;128;;
 29;Noname;3D Rage;AGP;ATI;Rage 128;3D Rage;8;;
 30;Sapphire;Radeon 9550 128MB DDR V/D/VO;AGP;ATI;Radeon 9550;Radeon 9500;128;;
 31;Noname;ATI9550 128M TV & DVI 128 Bit;AGP;ATI;Radeon 9550;Radeon 9500;128;;
+32;Palit;GeForce4 Ti4200 8X;AGP;Nvidia;GeForce4 Ti4200;GeForce4 Ti;64;;
+33;Palit;7600GT AGP 8X 256MB DDR3 TV-OUT DVI;AGP;Nvidia;GeForce 7600GT;GeForce 7600;256;;
+34;Palit;GeForce4 MX440 8X 128MB DDR TV-OUT DVI;AGP;Nvidia;GeForce4 MX440;GeForce4;128;;
+35;Asus;V9570/TD/P/128M;AGP;Nvidia;GeForce FX5700;GeForce FX5700;128;;
+36;Asus;AGP-V3800/32M (TV);AGP;Nvidia;Riva TNT2;Riva TNT2;32;;
+37;Asus;AGP-V3800M/32M (TF);AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;;
+38;Aopen;FX5600-DV0128;AGP;Nvidia;GeForce FX5600;GeForce FX5600;128;f;
+39;Zotac;6200 256MB 64BIT DDR2 (LP);AGP;Nvidia;GeForce 6200;GeForce 6200;256;;
+40;Asus;AGP-V3800 MAGIC/16M;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;
+41;Asus;AGP-V3000;AGP;Nvidia;Riva128;Riva128;4;;
+42;Chaintech;GeForce4 Ti4200 D64M;AGP;Nvidia;GeForce4 Ti4200;GeForce4 Ti;64;;
+43;Abit;Siluro FX5200 GT;AGP;Nvidia;GeForce FX5200;GeForce Fx5200;128;;
+44;MSI;MS-8830;AGP;Nvidia;Riva Vanta;Riva Vanta;16;f;
+45;Manli;GF4 MX-400;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
+46;Noname;Riva Vanta LT;AGP;Nvidia;Riva Vanta LT;Riva Vanta;16;;
+47;Noname;Riva TNT2 PRO32M AGP;AGP;Nvidia;Riva TNT2;Riva TNT2;32;;???
+48;Noname;Riva TNT2;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;???
+49;Noname;Riva TNT2 Vanta 16MB;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;???
+50;MilkyStar;GX-T2M64/32M;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;;
+51;Xelo;GeForce2 MX400/64MB;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;
+52;Noname;GeForce2 MX400;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;???
+53;Gainward;6200A AGP 8X 256MB DDR2 TV-OUT DVI;AGP;Nvidia;GeForce 6200;GeForce 6200;256;g;
+54;Sparkle;SP8855-DT-V/128MB 64Bit DDR (LP);AGP;Nvidia;GeForce FX5500;GeForce FX5500;128;g;
+55;Asus;V7100PRO/32M(T) (LP);AGP;Nvidia;GeForce2 MX400;GeForce2;32;g;
+56;Asus;V9180SE/T/P/64M/A;AGP;Nvidia;GeForce4 MX440-8X;GeForce4;64;g;
+57;Gigabyte;GV-GF1280-32E;AGP;Nvidia;GeForce2 MX200;GeForce2;32;g;
+58;Gigabyte;GV-N62128DS (LP);AGP;Nvidia;GeForce 6200;GeForce 6200;128;g;BOX
+59;Palit;FX5500 AGP8X 256MB TV-OUT DVI;AGP;Nvidia;GeForce FX5500;GeForce FX5500;256;g;
+60;Asus;V7100M-LP/32M(T) (LP);AGP;Nvidia;GeForce2 MX200;GeForce2;32;g;
+61;Asus;V9280/TD/P/128M/A;AGP;Nvidia;GeForce4 Ti4200;GeForce4 Ti;128;g;
+62;Asus;V8170PRO/T/P/64M/A;AGP;Nvidia;GeForce4 MX460;GeForce4;64;;
+63;Asus;N6600/TD/256M/A;AGP;Nvidia;GeForce 6600;GeForce 6600;256;g;
+64;Jetway;NV18AT064C;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
+65;Leadtech;Winfast A340;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
+66;Chaintech;GeForce4 MX440-SE D64M;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
+67;MSI;N8936;AGP;Nvidia;GeForce FX5200;GeForce FX5200;64;g;
+68;Sparkle;SP5300/32MB;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
+69;Noname;Vanta-LT 8MB;AGP;Nvidia;Riva Vanta LT;Riva Vanta;8;;
+70;STLab;AGP-M64-5M-32M;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
+71;AXLE;Vanta/16M;AGP;Nvidia;Riva Vanta;Riva Vanta;16;g;
+72;Butterfly;AGP-PRO-16M;AGP;Nvidia;Riva TNT2 PRO;Riva TNT2;16;g;
+73;Noname;GF2MX4TV-32M;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
+74;Noname;RIVA VANTA/16M AGP;AGP;Nvidia;Riva Vanta;Riva Vanta;16;g;
+75;Palit;GeForce4 MX440 8X 64MB DDR TV-OUT;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
+76;Palit;GeForce4 MX400 64-Bit 64MB SDR (LP);AGP;Nvidia;GeForce2 MX400;GeForce2;64;g;
+77;Palit;FX5200 AGP8X 128MB 64Bit TV-OUT DVI (orange);AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
+78;Palit;FX5200 AGP8X 128MB TV-OUT DVI (red);AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
+79;Palit;FX5500 AGP8X 128MB 128Bit TV-OUT DVI;AGP;Nvidia;GeForce FX5500;GeForce FX5500;128;;
+80;Noname;GF4 MX440-8X 64M DDR TV-OUT (LP);AGP;Nvidia;GeForce4 MX440;GeForce4;64;g;
+81;Noname;GF4 MX440SE (LP);AGP;Nvidia;GeForce4 MX440;GeForce4;32;g;
+82;Noname;GF4 MX440;AGP;Nvidia;GeForce4 MX440;GeForce4;64;g;
+83;Noname;GeForce2 MX400 32MB;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
+84;Noname;GF2 MX400 64MB 64Bit SDR;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;
+85;Noname;MX2-BG-1;AGP;Nvidia;GeForce2 MX200;GeForce2;64;;???
+86;Asus;V9520-X/TD/128M/A;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;BOX
