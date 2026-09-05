@@ -27,7 +27,7 @@ id;brand;name;revision;family;chipset;condition;addinfo
 26;Chaintech;CT-6VIA5T;;Socket 370;VIA Apollo 133T/686B;g;
 27;Gigabyte;GA-6VXE7+;rev.3.0;Socket 370;VIA 693A/596B;g;
 28;Gigabyte;GA-6VTXE;rev.1.0;Socket 370;VIA 694T/686B;g;
-29;ASUS;CUSL2;rev.1.02;Socket 370;Intel i815E;g;
+29;Asus;CUSL2;rev.1.02;Socket 370;Intel i815E;g;
 30;Chaintech;CT-6OJA3T;;Socket 370;Intel i815EP;;
 31;Epox;EP-3PTA;;Socket 370;Intel i815EP;;
 32;PC Chips;M755;rev.7.1;Socket 370;SiS 630;g;???
@@ -39,7 +39,7 @@ id;brand;name;revision;family;chipset;condition;addinfo
 38;Asus;P5P800;;Socket 775;Intel i865G;;
 39;Gigabyte;GA-8PEMT4;rev.1.0;Socket 478;Intel i845PE;;
 40;Asus;P4SP-MX;rev.1.00;Socket 478;SiS 651;;
-41;ECS;661FX-M;rev.1.0B;Socket 478;SiS 661FX;g;
+41;ECS;661FX-M;rev.1.0B;Socket 478;SiSÂ 661FX;g;
 42;Shattle;AK35GT/GTR;rev.2.2;Socket A;VIA KT333;;
 43;Acorp;7KT266A;rev.1.1;Socket A;VIA KT266A;;
 44;Epox;EP-8KRAI-X;;Socket A;VIA KT600;;
@@ -70,3 +70,4 @@ id;brand;name;revision;family;chipset;condition;addinfo
 69;Abit;IS7;;Socket 478;Intel i865PE;;
 70;Asus;P5P41C;rev.1.01G;Socket 775;Intel G41;g;BOX
 71;Asus;M2V;rev.1.01G;Socket AM2;VIA K8T890;g;BOX
+72;Lucky Star;5MVP3;rev.4.0;Socket 7;VIA Apollo MVP3/598;g;
