@@ -96,13 +96,13 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 95;Noname;6326SD;AGP;SiS;6326;6326;8;;
 96;Noname;6326;AGP;SiS;6326;6326;8;;
 97;3dfx;Velocity 100;AGP;3dfx;Velocity 100;Velocity 100;8;;
-98;3dfx;Voodoo 3 3000;AGP;3dfx;Voodoo 3 3000;Voodoo 3;16;;
-99;STB;Voodoo 3;AGP;3dfx;Voodoo 3 1000;Voodoo 3;8;;
+98;3dfx;Voodoo 3 1000;AGP;3dfx;Voodoo 3 1000;Voodoo 3;8;;
+99;STB;Voodoo 3 3000;AGP;3dfx;Voodoo 3 3000;Voodoo 3;16;;
 100;Genoa;7900;ISA;Tseng Labs;ET4000AX;ET4000AX;1;g;
 101;Paradise;PEGA2A;ISA;Paradise;38315A;38315A;256k;;
 102;Headland;435-0030-09;ISA;Video Seven;456-0023;456-0023;256k;;
 103;Oak Technology;OTIVGA 4277903;ISA;Oak Technology;OTI037C;OTI037C;256k;f;
-104;Realtek;RTVGA-V21-004;ISA;Realtek;RTG3105iEH;RTG3105;256k;;
-105;Realtek;RTGB3.C10;ISA;Realtek;RTG3105E;RTG3105;256k;g;
+104;Quadtel;RTVGA-V21-004;ISA;Realtek;RTG3105iEH;RTG3105;256k;;
+105;Quadtel;RTGB3.C10;ISA;Realtek;RTG3105E;RTG3105;256k;g;
 106;Quadtel;TVGA9000;ISA;Trident;TVGA9000B;TVGA9000;512k;;
 107;Trident;7210;ISA;Trident;TVGA9000i-3;TVGA9000;256k;;
