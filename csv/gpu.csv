@@ -39,9 +39,9 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 38;Aopen;FX5600-DV0128;AGP;Nvidia;GeForce FX5600;GeForce FX5600;128;f;
 39;Zotac;6200 256MB 64BIT DDR2 (LP);AGP;Nvidia;GeForce 6200;GeForce 6200;256;;
 40;Asus;AGP-V3800 MAGIC/16M;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;
-41;Asus;AGP-V3000;AGP;Nvidia;Riva128;Riva128;4;;
+41;Asus;AGP-V3000;AGP;Nvidia;Riva128;Riva 128;4;;
 42;Chaintech;GeForce4 Ti4200 D64M;AGP;Nvidia;GeForce4 Ti4200;GeForce4 Ti;64;;
-43;Abit;Siluro FX5200 GT;AGP;Nvidia;GeForce FX5200;GeForce Fx5200;128;;
+43;Abit;Siluro FX5200 GT;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
 44;MSI;MS-8830;AGP;Nvidia;Riva Vanta;Riva Vanta;16;f;
 45;Manli;GF4 MX-400;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
 46;Noname;Riva Vanta LT;AGP;Nvidia;Riva Vanta LT;Riva Vanta;16;;
@@ -65,7 +65,7 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 64;Jetway;NV18AT064C;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
 65;Leadtech;Winfast A340;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
 66;Chaintech;GeForce4 MX440-SE D64M;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
-67;MSI;N8936;AGP;Nvidia;GeForce FX5200;GeForce FX5200;64;g;
+67;MSI;N8936 (LP);AGP;Nvidia;GeForce FX5200;GeForce FX5200;64;g;
 68;Sparkle;SP5300/32MB;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
 69;Noname;Vanta-LT 8MB;AGP;Nvidia;Riva Vanta LT;Riva Vanta;8;;
 70;STLab;AGP-M64-5M-32M;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
@@ -81,7 +81,28 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 80;Noname;GF4 MX440-8X 64M DDR TV-OUT (LP);AGP;Nvidia;GeForce4 MX440;GeForce4;64;g;
 81;Noname;GF4 MX440SE (LP);AGP;Nvidia;GeForce4 MX440;GeForce4;32;g;
 82;Noname;GF4 MX440;AGP;Nvidia;GeForce4 MX440;GeForce4;64;g;
-83;Noname;GeForce2 MX400 32MB;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
+83;Noname;GeForce2 MX400 32MB (LP);AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
 84;Noname;GF2 MX400 64MB 64Bit SDR;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;
 85;Noname;MX2-BG-1;AGP;Nvidia;GeForce2 MX200;GeForce2;64;;???
-86;Asus;V9520-X/TD/128M/A;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;BOX
+86;Asus;V9520-X/TD/128M/A (LP);AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;BOX
+87;Asus;PCI-AV264VT/CT;AMB;ATI;ATI-264VT2;ATI-264;1;;
+88;Noname;TPS8616-3103-9102;ISA;Realtech;RTG3103;RTG3103;1;;
+89;Noname;CLVGA542XVL/H;VLB;Cirrus Logic;CL-GD5429;CL-GD5429-86QC-B;1;;
+90;Protac;i740;AGP;Intel;i740;i740;8;;
+91;Noname;i740;AGP;Intel;i740;i740;8;;
+92;Matrox;G450;AGP;Matrox;G450;G450;32;f;
+93;Matrox;Millenium Storm;PCI;Matrox;Millenium Storm;Millenium Storm;4;;
+94;ECS;AG315E-32;AGP;SiS;315;315;32;;
+95;Noname;6326SD;AGP;SiS;6326;6326;8;;
+96;Noname;6326;AGP;SiS;6326;6326;8;;
+97;3dfx;Velocity 100;AGP;3dfx;Velocity 100;Velocity 100;8;;
+98;3dfx;Voodoo 3 3000;AGP;3dfx;Voodoo 3 3000;Voodoo 3;16;;
+99;STB;Voodoo 3;AGP;3dfx;Voodoo 3 1000;Voodoo 3;8;;
+100;Genoa;7900;ISA;Tseng Labs;ET4000AX;ET4000AX;1;g;
+101;Paradise;PEGA2A;ISA;Paradise;38315A;38315A;256k;;
+102;Headland;435-0030-09;ISA;Video Seven;456-0023;456-0023;256k;;
+103;Oak Technology;OTIVGA 4277903;ISA;Oak Technology;OTI037C;OTI037C;256k;f;
+104;Realtek;RTVGA-V21-004;ISA;Realtek;RTG3105iEH;RTG3105;256k;;
+105;Realtek;RTGB3.C10;ISA;Realtek;RTG3105E;RTG3105;256k;g;
+106;Quadtel;TVGA9000;ISA;Trident;TVGA9000B;TVGA9000;512k;;
+107;Trident;7210;ISA;Trident;TVGA9000i-3;TVGA9000;256k;;
