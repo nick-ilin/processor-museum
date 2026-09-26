@@ -35,7 +35,7 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 34;Palit;GeForce4 MX440 8X 128MB DDR TV-OUT DVI;AGP;Nvidia;GeForce4 MX440;GeForce4;128;;
 35;Asus;V9570/TD/P/128M;AGP;Nvidia;GeForce FX5700;GeForce FX5700;128;;
 36;Asus;AGP-V3800/32M (TV);AGP;Nvidia;Riva TNT2;Riva TNT2;32;;
-37;Asus;AGP-V3800M/32M (TF);AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;;
+37;Asus;AGP-V3800M/32M (TF);AGP;Nvidia;Riva TNT2 M64;Riva TNT2;32;;
 38;Aopen;FX5600-DV0128;AGP;Nvidia;GeForce FX5600;GeForce FX5600;128;f;
 39;Zotac;6200 256MB 64BIT DDR2 (LP);AGP;Nvidia;GeForce 6200;GeForce 6200;256;;
 40;Asus;AGP-V3800 MAGIC/16M;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;
@@ -48,7 +48,7 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 47;Noname;Riva TNT2 PRO32M AGP;AGP;Nvidia;Riva TNT2;Riva TNT2;32;;???
 48;Noname;Riva TNT2;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;???
 49;Noname;Riva TNT2 Vanta 16MB;AGP;Nvidia;Riva TNT2;Riva TNT2;16;;???
-50;MilkyStar;GX-T2M64/32M;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;;
+50;MilkyStar;GX-T2M64/32M;AGP;Nvidia;Riva TNT2 M64;Riva TNT2;32;;
 51;Xelo;GeForce2 MX400/64MB;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;
 52;Noname;GeForce2 MX400;AGP;Nvidia;GeForce2 MX400;GeForce2;64;;???
 53;Gainward;6200A AGP 8X 256MB DDR2 TV-OUT DVI;AGP;Nvidia;GeForce 6200;GeForce 6200;256;g;
@@ -66,9 +66,9 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 65;Leadtech;Winfast A340;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
 66;Chaintech;GeForce4 MX440-SE D64M;AGP;Nvidia;GeForce4 MX440;GeForce4;64;;
 67;MSI;N8936 (LP);AGP;Nvidia;GeForce FX5200;GeForce FX5200;64;g;
-68;Sparkle;SP5300/32MB;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
+68;Sparkle;SP5300/32MB;AGP;Nvidia;Riva TNT2 M64;Riva TNT2;32;g;
 69;Noname;Vanta-LT 8MB;AGP;Nvidia;Riva Vanta LT;Riva Vanta;8;;
-70;STLab;AGP-M64-5M-32M;AGP;Nvidia;Riva TNT2 32M;Riva TNT2;32;g;
+70;STLab;AGP-M64-5M-32M;AGP;Nvidia;Riva TNT2 M64;Riva TNT2;32;g;
 71;AXLE;Vanta/16M;AGP;Nvidia;Riva Vanta;Riva Vanta;16;g;
 72;Butterfly;AGP-PRO-16M;AGP;Nvidia;Riva TNT2 PRO;Riva TNT2;16;g;
 73;Noname;GF2MX4TV-32M;AGP;Nvidia;GeForce2 MX400;GeForce2;32;;
@@ -87,22 +87,48 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 86;Asus;V9520-X/TD/128M/A (LP);AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;BOX
 87;Asus;PCI-AV264VT/CT;AMB;ATI;ATI-264VT2;ATI-264;1;;
 88;Noname;TPS8616-3103-9102;ISA;Realtech;RTG3103;RTG3103;1;;
-89;Noname;CLVGA542XVL/H;VLB;Cirrus Logic;CL-GD5429;CL-GD5429-86QC-B;1;;
-90;Protac;i740;AGP;Intel;i740;i740;8;;
-91;Noname;i740;AGP;Intel;i740;i740;8;;
-92;Matrox;G450;AGP;Matrox;G450;G450;32;f;
-93;Matrox;Millenium Storm;PCI;Matrox;Millenium Storm;Millenium Storm;4;;
-94;ECS;AG315E-32;AGP;SiS;315;315;32;;
-95;Noname;6326SD;AGP;SiS;6326;6326;8;;
-96;Noname;6326;AGP;SiS;6326;6326;8;;
+89;Noname;CLVGA542XVL/H;VLB;Cirrus Logic;CL-GD5429-86QC-B;Cirrus Logic GD5429;1;;
+90;Protac;i740;AGP;Intel;i740;Intel i740;8;;
+91;Noname;i740;AGP;Intel;i740;Intel i740;8;;
+92;Matrox;G450;AGP;Matrox;G450;Matrox G450;32;f;
+93;Matrox;Millenium Storm;PCI;Matrox;Millenium Storm;Matrox Millenium Storm;4;g;
+94;ECS;AG315E-32;AGP;SiS;315;SiS 315;32;;
+95;Noname;6326SD;AGP;SiS;6326;SiS 6326;8;;
+96;Noname;6326;AGP;SiS;6326;SiS 6326;8;;
 97;3dfx;Velocity 100;AGP;3dfx;Velocity 100;Velocity 100;8;;
 98;3dfx;Voodoo 3 1000;AGP;3dfx;Voodoo 3 1000;Voodoo 3;8;;
 99;STB;Voodoo 3 3000;AGP;3dfx;Voodoo 3 3000;Voodoo 3;16;;
-100;Genoa;7900;ISA;Tseng Labs;ET4000AX;ET4000AX;1;g;
-101;Paradise;PEGA2A;ISA;Paradise;38315A;38315A;256k;;
-102;Headland;435-0030-09;ISA;Video Seven;456-0023;456-0023;256k;;
-103;Oak Technology;OTIVGA 4277903;ISA;Oak Technology;OTI037C;OTI037C;256k;f;
+100;Genoa;7900;ISA;Tseng Labs;ET4000AX;Tseng Labs ET4000;1;g;
+101;Paradise;PEGA2A;ISA;Paradise;38315A;Paradise 38315;256k;;
+102;Headland;435-0030-09;ISA;Video Seven;456-0023;Video Seven 456-0023;256k;;
+103;Oak Technology;OTIVGA 4277903;ISA;Oak Technology;OTI037C;OTI037;256k;f;
 104;Quadtel;RTVGA-V21-004;ISA;Realtek;RTG3105iEH;RTG3105;256k;;
 105;Quadtel;RTGB3.C10;ISA;Realtek;RTG3105E;RTG3105;256k;g;
 106;Quadtel;TVGA9000;ISA;Trident;TVGA9000B;TVGA9000;512k;;
 107;Trident;7210;ISA;Trident;TVGA9000i-3;TVGA9000;256k;;
+108;Noname;6202-03 PCI 2MB;PCI;SiS;6202;SiS 6202;2;g;
+109;Noname;TGUI9440-3;PCI;Trident;TGUI9440-3;TGUI9440;1;;
+110;Acorp;ST-775A;PCI;S3;Trio64V2/DX;Trio64;1;;
+111;Expert Color;S3 765;PCI;S3;Trio64V+;Trio64;2;;
+112;Noname;SST-0375;PCI;S3;Virge/DX;Virge;2;;
+113;Noname;S3 375/775;PCI;S3;Virge/DX;Virge;4;;
+114;Butterfly;Trio64V+/64/32;PCI;S3;Trio64;Trio64;1;;
+115;Butterfly;PCI-S3T64V2-1M;PCI;S3;Trio64V2/DX;Trio64;1;;
+116;Super;35-8213-21;PCI;S3;Trio64;Trio64;1;;
+117;Eagles;64/325 MK IV;PCI;S3;Trio64V2/DX;Trio64;1;;
+118;Super;35-8237-21;PCI;S3;Trio64V2/DX;Trio64;2;;
+119;Super;S3 64V2;PCI;S3;Trio64V2/DX;Trio64;1;;
+120;Perx;EXP100 E002853;PCI;S3;Trio64V2/DX;Trio64;2;;
+121;Number Nine;PCB 01-868602-00;AGP;Nvidia;Riva TNT2 M64;Riva TNT2;32;;
+122;Number Nine;PCB 01-338120-00;AGP;S3;Savage4 LT;Savage4;8;;
+123;Super;S3 GX2;AGP;S3;Virge/GX2;Virge;4;;
+124;Sparkle;SP368F;AGP;S3;Trio3D/2X;Trio3D;4;;
+125;Sparkle;SP368G;AGP;S3;Trio3D/2X;Trio3D;4;;
+126;Tip Top;S3/TRIO 3D/2X W/4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
+127;Lit;Lit-368;AGP;S3;Trio3D/2X;Trio3D;2;;
+128;Tip Top;S3/Virge MX W/4MB;AGP;S3;Virge/MX;Virge;4;;
+129;Noname;CL2X-20A;AGP;S3;Trio3D/2X;Trio3D;2;;
+130;Butterfly;AGP-3D/2X-6-4M;AGP;S3;Trio3D/2X;Trio3D;4;;
+131;Noname;Trio 3D/2X 4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
+132;Tip Top;S3/TRIO 3D/2X W/8MB;AGP;S3;Trio3D/2X;Trio3D;8;;
+133;Tip Top;S3/TRIO 3D/2X W/4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
