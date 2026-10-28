@@ -86,7 +86,7 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 85;Noname;MX2-BG-1;AGP;Nvidia;GeForce2 MX200;GeForce2;64;;???
 86;Asus;V9520-X/TD/128M/A (LP);AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;BOX
 87;Asus;PCI-AV264VT/CT;AMB;ATI;ATI-264VT2;ATI-264;1;;
-88;Noname;TPS8616-3103-9102;ISA;Realtech;RTG3103;RTG3103;1;;
+88;Noname;TPS8616-3103-9102;ISA;Realtek;RTG3103;RTG3103;1;;
 89;Noname;CLVGA542XVL/H;VLB;Cirrus Logic;CL-GD5429-86QC-B;Cirrus Logic GD5429;1;;
 90;Protac;i740;AGP;Intel;i740;Intel i740;8;;
 91;Noname;i740;AGP;Intel;i740;Intel i740;8;;
@@ -132,3 +132,4 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 131;Noname;Trio 3D/2X 4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
 132;Tip Top;S3/TRIO 3D/2X W/8MB;AGP;S3;Trio3D/2X;Trio3D;8;;
 133;Tip Top;S3/TRIO 3D/2X W/4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
+134;Sapphire;HD2400 PRO 512M DDR2 VGA/TVO/DVI-I;AGP;ATI;Radeon HD2400 Pro;Radeon HD2400;512;;
