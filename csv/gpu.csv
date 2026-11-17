@@ -133,3 +133,4 @@ id;brand;name;slot;gpuvendor;gpu;family;ram;condition;addinfo
 132;Tip Top;S3/TRIO 3D/2X W/8MB;AGP;S3;Trio3D/2X;Trio3D;8;;
 133;Tip Top;S3/TRIO 3D/2X W/4MB;AGP;S3;Trio3D/2X;Trio3D;4;;
 134;Sapphire;HD2400 PRO 512M DDR2 VGA/TVO/DVI-I;AGP;ATI;Radeon HD2400 Pro;Radeon HD2400;512;;
+135;Asus;V9520MAGIC/T/P/128M/A;AGP;Nvidia;GeForce FX5200;GeForce FX5200;128;;
